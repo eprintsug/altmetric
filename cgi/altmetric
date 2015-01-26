@@ -1,0 +1,61 @@
+use LWP::UserAgent;
+use EPrints;
+
+use strict;
+
+my $eprints = EPrints->new;
+my $repo = $eprints->current_repository;
+exit( 0 ) unless( defined $repo );
+
+my $doi = $repo->param( 'doi' ) or exit;
+
+my $ua = LWP::UserAgent->new();
+
+if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
+{
+	$ua->proxy( 'http', $ENV{HTTP_proxy} )
+}
+
+my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/doi/$doi" );
+
+my $api_key = $repo->config( 'altmetric', 'api_key' );
+
+if( EPrints::Utils::is_set( $api_key ) )
+{
+	$alt_url->query_form( key => $api_key );
+} 
+
+my $req = HTTP::Request->new( GET => $alt_url );
+
+my $res = $ua->request($req);
+
+binmode( STDOUT, ":utf8" );
+
+# note we always reply to the Ajax request with 200 OK
+EPrints::Apache::AnApache::send_status_line( $repo->get_request, 200 );
+$repo->send_http_header( "content_type"=> "application/json; charset=utf-8" );
+
+if( $res->is_success ) 
+{
+	print STDOUT $res->content;
+}
+else
+{
+	# other error codes:
+	# 420: rate limited
+	# 502: API down for maintenance
+	# 403: unauthorised call
+	my $errmsg;
+	if( $res->code == 404 )
+	{
+		$errmsg = $repo->phrase( 'lib/altmetric:not_found' );
+	}
+	else
+	{
+		$errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
+	}
+
+	print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
+}
+
+exit;
