@@ -1,124 +1,85 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm id='http://template.ulcc.ac.uk/id/epm/altmetric' xmlns='http://eprints.org/ep2/data/2.0'>
+<epm id='http://drtjmb.com/id/epm/altmetric' xmlns='http://eprints.org/ep2/data/2.0'>
   <epmid>altmetric</epmid>
   <eprintid>340</eprintid>
-  <uri>http://bazaar.eprints.org/id/epm/altmetric</uri>
+  <uri>http://drtjmb.com/id/epm/altmetric</uri>
   <documents>
-    <document id='http://template.ulcc.ac.uk/id/document/2017'>
-      <docid>2017</docid>
-      <rev_number>1</rev_number>
+    <document>
       <files>
-        <file id='http://template.ulcc.ac.uk/id/file/6943'>
-          <fileid>6943</fileid>
+        <file>
           <datasetid>document</datasetid>
-          <objectid>2017</objectid>
           <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
           <mime_type>text/plain</mime_type>
           <hash>000cc6d6b4cb40f3350fe2992408e377</hash>
           <hash_type>MD5</hash_type>
           <filesize>494</filesize>
-          <mtime>2013-11-21 17:02:20</mtime>
         </file>
-        <file id='http://template.ulcc.ac.uk/id/file/6944'>
-          <fileid>6944</fileid>
+        <file>
           <datasetid>document</datasetid>
-          <objectid>2017</objectid>
-          <filename>epm/altmetric/cgi/altmetric</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>947a631073c8cb3226b82e7b5a2a1993</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1272</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
-        </file>
-        <file id='http://template.ulcc.ac.uk/id/file/6945'>
-          <fileid>6945</fileid>
-          <datasetid>document</datasetid>
-          <objectid>2017</objectid>
-          <filename>lang/en/phrases/altmetric.xml</filename>
-          <mime_type>application/xml</mime_type>
-          <hash>53dc9174be295ccf40bd9f7efe978daf</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>563</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
-        </file>
-        <file id='http://template.ulcc.ac.uk/id/file/6946'>
-          <fileid>6946</fileid>
-          <datasetid>document</datasetid>
-          <objectid>2017</objectid>
           <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
           <mime_type>text/plain</mime_type>
           <hash>0c4044c1f1a2cfd96195b00e7b80b8ac</hash>
           <hash_type>MD5</hash_type>
           <filesize>847</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
         </file>
-        <file id='http://template.ulcc.ac.uk/id/file/6947'>
-          <fileid>6947</fileid>
+        <file>
           <datasetid>document</datasetid>
-          <objectid>2017</objectid>
-          <filename>static/images/epm/altmetric.png</filename>
-          <mime_type>image/png</mime_type>
-          <hash>09eaeb9c2762557023d6d654c9b28239</hash>
+          <filename>lang/en/phrases/altmetric.xml</filename>
+          <mime_type>application/xml</mime_type>
+          <hash>53dc9174be295ccf40bd9f7efe978daf</hash>
           <hash_type>MD5</hash_type>
-          <filesize>112883</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
+          <filesize>563</filesize>
         </file>
-        <file id='http://template.ulcc.ac.uk/id/file/6948'>
-          <fileid>6948</fileid>
+        <file>
           <datasetid>document</datasetid>
-          <objectid>2017</objectid>
           <filename>static/javascript/auto/99_altmetric.js</filename>
-          <mime_type>text/x-c++</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>c4802511b30a7acb0276b3a0eaca8c81</hash>
           <hash_type>MD5</hash_type>
           <filesize>2457</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
         </file>
-        <file id='http://template.ulcc.ac.uk/id/file/6949'>
-          <fileid>6949</fileid>
+        <file>
           <datasetid>document</datasetid>
-          <objectid>2017</objectid>
           <filename>static/style/auto/altmetric.css</filename>
-          <mime_type>text/x-c</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
           <hash_type>MD5</hash_type>
           <filesize>1918</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
         </file>
-      </files>
-      <eprintid>340</eprintid>
-      <pos>1</pos>
-      <placement>1</placement>
-      <mime_type>text/x-c</mime_type>
-      <format>text</format>
-      <language>en</language>
-      <security>public</security>
-      <main>static/style/auto/altmetric.css</main>
-      <content>install</content>
-    </document>
-    <document id='http://template.ulcc.ac.uk/id/document/2018'>
-      <docid>2018</docid>
-      <rev_number>1</rev_number>
-      <files>
-        <file id='http://template.ulcc.ac.uk/id/file/6950'>
-          <fileid>6950</fileid>
+        <file>
           <datasetid>document</datasetid>
-          <objectid>2018</objectid>
           <filename>static/images/epm/altmetric.png</filename>
           <mime_type>image/png</mime_type>
           <hash>09eaeb9c2762557023d6d654c9b28239</hash>
           <hash_type>MD5</hash_type>
           <filesize>112883</filesize>
-          <mtime>2013-11-21 17:02:21</mtime>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/altmetric/cgi/altmetric</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>947a631073c8cb3226b82e7b5a2a1993</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1272</filesize>
         </file>
       </files>
-      <eprintid>340</eprintid>
-      <pos>2</pos>
-      <placement>2</placement>
-      <mime_type>image/png</mime_type>
+      <mime_type>text/plain</mime_type>
+      <format>text</format>
+      <main>epm/altmetric/cgi/altmetric</main>
+      <content>install</content>
+    </document>
+    <document>
+      <files>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/images/epm/altmetric.png</filename>
+          <mime_type>image/png</mime_type>
+          <hash>09eaeb9c2762557023d6d654c9b28239</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>112883</filesize>
+        </file>
+      </files>
       <format>image</format>
-      <language>en</language>
-      <security>public</security>
       <main>static/images/epm/altmetric.png</main>
       <content>coverimage</content>
     </document>
@@ -133,7 +94,7 @@
       <id>sf2@ecs.soton.ac.uk</id>
     </item>
   </creators>
-  <datestamp>2013-11-21 17:02:20</datestamp>
+  <datestamp>2015-07-30 15:14:35</datestamp>
   <title>Altmetric</title>
   <description>Display altmetric&apos;s badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/</description>
   <requirements>An optional API key from Altmetric.</requirements>
