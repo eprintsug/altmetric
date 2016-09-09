@@ -7,7 +7,8 @@ my $eprints = EPrints->new;
 my $repo = $eprints->current_repository;
 exit( 0 ) unless( defined $repo );
 
-my $doi = $repo->param( 'doi' ) or exit;
+my $alt_type = $repo->param( 'id_type' ) or exit;
+my $alt_id = $repo->param( 'id' ) or exit;
 
 my $ua = LWP::UserAgent->new();
 
@@ -16,7 +17,7 @@ if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
 	$ua->proxy( 'http', $ENV{HTTP_proxy} )
 }
 
-my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/doi/$doi" );
+my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/$alt_type/$alt_id" );
 
 my $api_key = $repo->config( 'altmetric', 'api_key' );
 
