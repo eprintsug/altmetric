@@ -2,6 +2,9 @@
 
 Display altmetric badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/
 
-Originally developed by Sébastien François (https://github.com/sebastfr); version 1.0.5 ported here from http://bazaar.eprints.org/340/
+Originally developed by Sébastien François (https://github.com/sebastfr); updated by @drtjmb.
+Now maintained by *us* - eprintsug!
 
-If this code is already hosted elsewhere, please contact @drtjmb.
+Version 1.1.0: Adds ability to use other IDs supported by Altmetric API e.g. ISBN.
+The data used from the EPrint is now a config option so repositories can tailor this to suit te data they hold. See cfg.d/z_altmetric.pl.
+
