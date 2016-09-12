@@ -6,5 +6,5 @@ Originally developed by Sébastien François (https://github.com/sebastfr); upda
 Now maintained by *us* - eprintsug!
 
 Version 1.1.0: Adds ability to use other IDs supported by Altmetric API e.g. ISBN.
-The data used from the EPrint is now a config option so repositories can tailor this to suit te data they hold. See cfg.d/z_altmetric.pl.
+The data used from the EPrint is now a config option so repositories can tailor this to suit the data they hold. See cfg.d/z_altmetric.pl.
 
