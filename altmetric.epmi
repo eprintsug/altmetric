@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm id='http://drtjmb.com/id/epm/altmetric' xmlns='http://eprints.org/ep2/data/2.0'>
+<epm id='http://bazaar.eprints.org/id/epm/altmetric' xmlns='http://eprints.org/ep2/data/2.0'>
   <epmid>altmetric</epmid>
   <eprintid>340</eprintid>
-  <uri>http://drtjmb.com/id/epm/altmetric</uri>
+  <uri>http://github.com/eprintsug/altmetric</uri>
   <documents>
     <document>
       <files>
@@ -84,17 +84,31 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.0.5</version>
+  <version>1.1.0</version>
   <creators>
     <item>
       <name>
         <family>Francois</family>
         <given>Sebastien</given>
       </name>
-      <id>sf2@ecs.soton.ac.uk</id>
+      <id>https://github.com/sebastfr</id>
+    </item>
+	<item>
+      <name>
+        <family>Miles-Board</family>
+        <given>Tim</given>
+      </name>
+      <id>https://github.com/drtjmb</id>
+    </item>
+	<item>
+      <name>
+        <family>Salter</family>
+        <given>John</given>
+      </name>
+      <id>https://github.com/jesusbagpuss</id>
     </item>
   </creators>
-  <datestamp>2015-07-30 15:14:35</datestamp>
+  <datestamp>2016-09-09 15:39:35</datestamp>
   <title>Altmetric</title>
   <description>Display altmetric&apos;s badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/</description>
   <requirements>An optional API key from Altmetric.</requirements>
