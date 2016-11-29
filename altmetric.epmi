@@ -1,27 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm id='http://bazaar.eprints.org/id/epm/altmetric' xmlns='http://eprints.org/ep2/data/2.0'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://pok.pok.com/id/epm/altmetric'>
   <epmid>altmetric</epmid>
   <eprintid>340</eprintid>
-  <uri>http://github.com/eprintsug/altmetric</uri>
+  <uri>http://bazaar.eprints.org/id/epm/altmetric</uri>
   <documents>
     <document>
       <files>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>000cc6d6b4cb40f3350fe2992408e377</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>494</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>0c4044c1f1a2cfd96195b00e7b80b8ac</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>847</filesize>
-        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/altmetric.xml</filename>
@@ -29,22 +13,6 @@
           <hash>53dc9174be295ccf40bd9f7efe978daf</hash>
           <hash_type>MD5</hash_type>
           <filesize>563</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>static/javascript/auto/99_altmetric.js</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>c4802511b30a7acb0276b3a0eaca8c81</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>2457</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>static/style/auto/altmetric.css</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1918</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -56,16 +24,56 @@
         </file>
         <file>
           <datasetid>document</datasetid>
+          <filename>static/javascript/auto/99_altmetric.js</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>790ad64fd0461280cc3d7e98dfdc6a31</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2978</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/style/auto/altmetric.css</filename>
+          <mime_type>text/x-c</mime_type>
+          <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1918</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Screen/EPMC/Altmetric.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>3e3f1a4ffefedd62970c92bbaa56a8cd</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1355</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>ebc77899240d8a7b68be80e134a508dd</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1028</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/altmetric/cgi/altmetric</filename>
           <mime_type>text/plain</mime_type>
-          <hash>947a631073c8cb3226b82e7b5a2a1993</hash>
+          <hash>de02f9d0daa680ed0e8505a9d7d2c5e1</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1272</filesize>
+          <filesize>1333</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>5ae3066e6aeecf720c354f93c7c11869</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1351</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
       <format>text</format>
-      <main>epm/altmetric/cgi/altmetric</main>
+      <main>epm/altmetric/cfg/cfg.d/z_altmetric.pl</main>
       <content>install</content>
     </document>
     <document>
@@ -93,14 +101,14 @@
       </name>
       <id>https://github.com/sebastfr</id>
     </item>
-	<item>
+    <item>
       <name>
         <family>Miles-Board</family>
         <given>Tim</given>
       </name>
       <id>https://github.com/drtjmb</id>
     </item>
-	<item>
+    <item>
       <name>
         <family>Salter</family>
         <given>John</given>
@@ -108,7 +116,7 @@
       <id>https://github.com/jesusbagpuss</id>
     </item>
   </creators>
-  <datestamp>2016-09-09 15:39:35</datestamp>
+  <datestamp>2016-11-29 02:23:35</datestamp>
   <title>Altmetric</title>
   <description>Display altmetric&apos;s badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/</description>
   <requirements>An optional API key from Altmetric.</requirements>
