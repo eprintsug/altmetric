@@ -1,4 +1,11 @@
 ### Altmetric Summary Page Widget
+#
+# For the Altmetric badges to work properly you need to contact support@altmetric.com 
+# and give them the domain your IR is hosted on.
+# If you skip this step users may not see the full details for each article
+#   e.g. only the most recent tweets or likes may be shown.
+#
+########################################################################################
 
 # Enable the widget
 $c->{plugins}{"Screen::EPrint::Box::Altmetric"}{params}{disable} = 0;
