@@ -1,80 +1,87 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://bazaar.eprints.org/id/epm/altmetric'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://test.eprints/id/epm/altmetric'>
   <epmid>altmetric</epmid>
-  <eprintid>340</eprintid>
-  <uri>http://github.com/eprintsug/altmetric</uri>
+  <uri>http://test.eprints/id/epm/altmetric</uri>
   <documents>
     <document>
       <files>
         <file>
+          <datasetid>document</datasetid>
           <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>81c374e68cee66625c18744ce8f844be</hash>
+          <hash>663d05eef5eafc4441e9fb175d159196</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1394</filesize>
-          <data encoding='base64'>IyMjIEFsdG1ldHJpYyBTdW1tYXJ5IFBhZ2UgV2lkZ2V0DQoNCiMgRW5hYmxlIHRoZSB3aWRnZXQN
-CiRjLT57cGx1Z2luc317IlNjcmVlbjo6RVByaW50OjpCb3g6OkFsdG1ldHJpYyJ9e3BhcmFtc317
-ZGlzYWJsZX0gPSAwOw0KDQojIFBvc2l0aW9uDQokYy0+e3BsdWdpbnN9LT57IlNjcmVlbjo6RVBy
-aW50OjpCb3g6OkFsdG1ldHJpYyJ9LT57YXBwZWFyc30tPntzdW1tYXJ5X2JvdHRvbX0gPSAyNTsN
-CiRjLT57cGx1Z2luc30tPnsiU2NyZWVuOjpFUHJpbnQ6OkJveDo6QWx0bWV0cmljIn0tPnthcHBl
-YXJzfS0+e3N1bW1hcnlfcmlnaHR9ID0gdW5kZWY7DQoNCiMgQWx0bWV0cmljIEFQSSBVUkwNCiRj
-LT57YWx0bWV0cmljfS0+e2Jhc2VfdXJsfSA9ICJodHRwOi8vYXBpLmFsdG1ldHJpYy5jb20vdjEi
-Ow0KDQojIE9wdGlvbmFsIEFQSSBrZXkgLSBzZWUgaHR0cDovL2FwaS5hbHRtZXRyaWMuY29tL2lu
-ZGV4Lmh0bWwja2V5cw0KIyAkYy0+e2FsdG1ldHJpY30tPnthcGlfa2V5fSA9ICIiOw0KDQojIEZ1
-bmN0aW9uIHRvIHJldHVybiBpZCB0eXBlIGFuZCBpZC4NCiMgRm9yIHN1cHBvcnRlZCBpZF90eXBl
-cywgY2hlY2sgdGhlIEFsdG1ldHJpY3MgQVBJIHJlZmVyZW5jZQ0KIyBDdXJyZW50bHksIHRoaXMg
-c3VwcG9ydHMgZG9pLCBpc2JuLCBhclhpdklELCBQTUlELCBhZHMgYW5kIHVyaS4NCiMgSWYgYW4g
-RXByaW50cyBoYXMgbXVsdGlwbGUgdXNhYmxlIGlkZW50aWZpZXJzLCB0aGUgZmlyc3QgcmV0dXJu
-ZWQgdmFsdWUgd2lsbCBiZSB1c2VkLg0KJGMtPnthbHRtZXRyaWN9e2dldF90eXBlX2FuZF9pZH0g
-PSBzdWIgew0KICAgICAgICBteSggJGVwcmludCApID0gQF87DQoNCiAgICAgICAgaWYoICRlcHJp
-bnQtPmV4aXN0c19hbmRfc2V0KCAiZG9pIiApICl7DQogICAgICAgICAgICAgICAgcmV0dXJuKCAi
-ZG9pIiwgJGVwcmludC0+dmFsdWUoICJkb2kiICkgKTsNCiAgICAgICAgfQ0KICAgICAgICBpZigg
-JGVwcmludC0+ZXhpc3RzX2FuZF9zZXQoICJpc2JuIiApICl7DQogICAgICAgICAgICAgICAgcmV0
-dXJuKCAiaXNibiIsICRlcHJpbnQtPnZhbHVlKCAiaXNibiIgKSApOw0KICAgICAgICB9DQoNCiAg
-ICAgICAgIyBpZF9udW1iZXJzIHRoYXQgaGF2ZSAxMC4gaW4gdGhlbSAocnVkaW1lbnRhcnkgZG9p
-IGNoZWNrKQ0KICAgICAgICBpZiggJGVwcmludC0+ZXhpc3RzX2FuZF9zZXQoICJpZF9udW1iZXIi
-ICkgJiYgKCAkZXByaW50LT52YWx1ZSggImlkX251bWJlciIgKSA9fiAvXGIxMC4vICkgKXsNCiAg
-ICAgICAgICAgICAgICByZXR1cm4oICJkb2kiLCAkZXByaW50LT52YWx1ZSggImlkX251bWJlciIg
-KSApOwkNCiAgICAgICAgfQ0KDQogICAgICAgICNvdGhlciBmaWVsZHMgY291bGQgYmUgY2hlY2tl
-ZCBhbmQgcmV0dXJuZWQgaGVyZS4NCn07DQo=
+          <filesize>1716</filesize>
+          <data encoding='base64'>IyMjIEFsdG1ldHJpYyBTdW1tYXJ5IFBhZ2UgV2lkZ2V0CiMKIyBGb3IgdGhlIEFsdG1ldHJpYyBi
+YWRnZXMgdG8gd29yayBwcm9wZXJseSB5b3UgbmVlZCB0byBjb250YWN0IHN1cHBvcnRAYWx0bWV0
+cmljLmNvbSAKIyBhbmQgZ2l2ZSB0aGVtIHRoZSBkb21haW4geW91ciBJUiBpcyBob3N0ZWQgb24u
+CiMgSWYgeW91IHNraXAgdGhpcyBzdGVwIHVzZXJzIG1heSBub3Qgc2VlIHRoZSBmdWxsIGRldGFp
+bHMgZm9yIGVhY2ggYXJ0aWNsZQojICAgZS5nLiBvbmx5IHRoZSBtb3N0IHJlY2VudCB0d2VldHMg
+b3IgbGlrZXMgbWF5IGJlIHNob3duLgojCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMK
+CiMgRW5hYmxlIHRoZSB3aWRnZXQKJGMtPntwbHVnaW5zfXsiU2NyZWVuOjpFUHJpbnQ6OkJveDo6
+QWx0bWV0cmljIn17cGFyYW1zfXtkaXNhYmxlfSA9IDA7CgojIFBvc2l0aW9uCiRjLT57cGx1Z2lu
+c30tPnsiU2NyZWVuOjpFUHJpbnQ6OkJveDo6QWx0bWV0cmljIn0tPnthcHBlYXJzfS0+e3N1bW1h
+cnlfYm90dG9tfSA9IDI1OwokYy0+e3BsdWdpbnN9LT57IlNjcmVlbjo6RVByaW50OjpCb3g6OkFs
+dG1ldHJpYyJ9LT57YXBwZWFyc30tPntzdW1tYXJ5X3JpZ2h0fSA9IHVuZGVmOwoKIyBBbHRtZXRy
+aWMgQVBJIFVSTAokYy0+e2FsdG1ldHJpY30tPntiYXNlX3VybH0gPSAiaHR0cDovL2FwaS5hbHRt
+ZXRyaWMuY29tL3YxIjsKCiMgT3B0aW9uYWwgQVBJIGtleSAtIHNlZSBodHRwOi8vYXBpLmFsdG1l
+dHJpYy5jb20vaW5kZXguaHRtbCNrZXlzCiMgJGMtPnthbHRtZXRyaWN9LT57YXBpX2tleX0gPSAi
+IjsKCiMgRnVuY3Rpb24gdG8gcmV0dXJuIGlkIHR5cGUgYW5kIGlkLgojIEZvciBzdXBwb3J0ZWQg
+aWRfdHlwZXMsIGNoZWNrIHRoZSBBbHRtZXRyaWNzIEFQSSByZWZlcmVuY2UKIyBDdXJyZW50bHks
+IHRoaXMgc3VwcG9ydHMgZG9pLCBpc2JuLCBhclhpdklELCBQTUlELCBhZHMgYW5kIHVyaS4KIyBJ
+ZiBhbiBFcHJpbnRzIGhhcyBtdWx0aXBsZSB1c2FibGUgaWRlbnRpZmllcnMsIHRoZSBmaXJzdCBy
+ZXR1cm5lZCB2YWx1ZSB3aWxsIGJlIHVzZWQuCiRjLT57YWx0bWV0cmljfXtnZXRfdHlwZV9hbmRf
+aWR9ID0gc3ViIHsKICAgICAgICBteSggJGVwcmludCApID0gQF87CgogICAgICAgIGlmKCAkZXBy
+aW50LT5leGlzdHNfYW5kX3NldCggImRvaSIgKSApewogICAgICAgICAgICAgICAgcmV0dXJuKCAi
+ZG9pIiwgJGVwcmludC0+dmFsdWUoICJkb2kiICkgKTsKICAgICAgICB9CiAgICAgICAgaWYoICRl
+cHJpbnQtPmV4aXN0c19hbmRfc2V0KCAiaXNibiIgKSApewogICAgICAgICAgICAgICAgcmV0dXJu
+KCAiaXNibiIsICRlcHJpbnQtPnZhbHVlKCAiaXNibiIgKSApOwogICAgICAgIH0KCgkJIyBpZF9u
+dW1iZXJzIHRoYXQgaGF2ZSAxMC4gaW4gdGhlbSAocnVkaW1lbnRhcnkgZG9pIGNoZWNrKQogICAg
+ICAgIGlmKCAkZXByaW50LT5leGlzdHNfYW5kX3NldCggImlkX251bWJlciIgKSAmJiAoICRlcHJp
+bnQtPnZhbHVlKCAiaWRfbnVtYmVyIiApID1+IC9cYjEwLi8gKSApewoJCSAgICAgICAgCiAgICAg
+ICAgICAgICAgICByZXR1cm4oICJkb2kiLCAkZXByaW50LT52YWx1ZSggImlkX251bWJlciIgKSAp
+OwkKCQl9CgoJCSNvdGhlciBmaWVsZHMgY291bGQgYmUgY2hlY2tlZCBhbmQgcmV0dXJuZWQgaGVy
+ZS4KfTsK
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>epm/altmetric/cgi/altmetric</filename>
           <mime_type>text/plain</mime_type>
-          <hash>8a0ae2aedcaf4d60d72aaeffcdaa34d2</hash>
+          <hash>de02f9d0daa680ed0e8505a9d7d2c5e1</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1395</filesize>
-          <data encoding='base64'>dXNlIExXUDo6VXNlckFnZW50Ow0KdXNlIEVQcmludHM7DQoNCnVzZSBzdHJpY3Q7DQoNCm15ICRl
-cHJpbnRzID0gRVByaW50cy0+bmV3Ow0KbXkgJHJlcG8gPSAkZXByaW50cy0+Y3VycmVudF9yZXBv
-c2l0b3J5Ow0KZXhpdCggMCApIHVubGVzcyggZGVmaW5lZCAkcmVwbyApOw0KDQpteSAkYWx0X3R5
-cGUgPSAkcmVwby0+cGFyYW0oICdpZF90eXBlJyApIG9yIGV4aXQ7DQpteSAkYWx0X2lkID0gJHJl
-cG8tPnBhcmFtKCAnaWQnICkgb3IgZXhpdDsNCg0KbXkgJHVhID0gTFdQOjpVc2VyQWdlbnQtPm5l
-dygpOw0KDQppZiggRVByaW50czo6VXRpbHM6OmlzX3NldCggJEVOVntIVFRQX3Byb3h5fSApICkN
-CnsNCgkkdWEtPnByb3h5KCAnaHR0cCcsICRFTlZ7SFRUUF9wcm94eX0gKQ0KfQ0KDQpteSAkYWx0
-X3VybCA9IFVSSS0+bmV3KCAkcmVwby0+Y29uZmlnKCAnYWx0bWV0cmljJywgJ2Jhc2VfdXJsJyAp
-LiIvJGFsdF90eXBlLyRhbHRfaWQiICk7DQoNCm15ICRhcGlfa2V5ID0gJHJlcG8tPmNvbmZpZygg
-J2FsdG1ldHJpYycsICdhcGlfa2V5JyApOw0KDQppZiggRVByaW50czo6VXRpbHM6OmlzX3NldCgg
-JGFwaV9rZXkgKSApDQp7DQoJJGFsdF91cmwtPnF1ZXJ5X2Zvcm0oIGtleSA9PiAkYXBpX2tleSAp
-Ow0KfSANCg0KbXkgJHJlcSA9IEhUVFA6OlJlcXVlc3QtPm5ldyggR0VUID0+ICRhbHRfdXJsICk7
-DQoNCm15ICRyZXMgPSAkdWEtPnJlcXVlc3QoJHJlcSk7DQoNCmJpbm1vZGUoIFNURE9VVCwgIjp1
-dGY4IiApOw0KDQojIG5vdGUgd2UgYWx3YXlzIHJlcGx5IHRvIHRoZSBBamF4IHJlcXVlc3Qgd2l0
-aCAyMDAgT0sNCkVQcmludHM6OkFwYWNoZTo6QW5BcGFjaGU6OnNlbmRfc3RhdHVzX2xpbmUoICRy
-ZXBvLT5nZXRfcmVxdWVzdCwgMjAwICk7DQokcmVwby0+c2VuZF9odHRwX2hlYWRlciggImNvbnRl
-bnRfdHlwZSI9PiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIgKTsNCg0KaWYoICRy
-ZXMtPmlzX3N1Y2Nlc3MgKSANCnsNCglwcmludCBTVERPVVQgJHJlcy0+Y29udGVudDsNCn0NCmVs
-c2UNCnsNCgkjIG90aGVyIGVycm9yIGNvZGVzOg0KCSMgNDIwOiByYXRlIGxpbWl0ZWQNCgkjIDUw
-MjogQVBJIGRvd24gZm9yIG1haW50ZW5hbmNlDQoJIyA0MDM6IHVuYXV0aG9yaXNlZCBjYWxsDQoJ
-bXkgJGVycm1zZzsNCglpZiggJHJlcy0+Y29kZSA9PSA0MDQgKQ0KCXsNCgkJJGVycm1zZyA9ICRy
-ZXBvLT5waHJhc2UoICdsaWIvYWx0bWV0cmljOm5vdF9mb3VuZCcgKTsNCgl9DQoJZWxzZQ0KCXsN
-CgkJJGVycm1zZyA9ICRyZXBvLT5waHJhc2UoICdsaWIvYWx0bWV0cmljOnVua25vd25fZXJyb3In
-ICk7DQoJfQ0KDQoJcHJpbnQgU1RET1VUICd7ICJlcnJvciI6ICIxIiwgIm1lc3NhZ2UiOiAiJy4k
-ZXJybXNnLiciIH0nOw0KfQ0KDQpleGl0Ow0K
+          <filesize>1333</filesize>
+          <data encoding='base64'>dXNlIExXUDo6VXNlckFnZW50Owp1c2UgRVByaW50czsKCnVzZSBzdHJpY3Q7CgpteSAkZXByaW50
+cyA9IEVQcmludHMtPm5ldzsKbXkgJHJlcG8gPSAkZXByaW50cy0+Y3VycmVudF9yZXBvc2l0b3J5
+OwpleGl0KCAwICkgdW5sZXNzKCBkZWZpbmVkICRyZXBvICk7CgpteSAkYWx0X3R5cGUgPSAkcmVw
+by0+cGFyYW0oICdpZF90eXBlJyApIG9yIGV4aXQ7Cm15ICRhbHRfaWQgPSAkcmVwby0+cGFyYW0o
+ICdpZCcgKSBvciBleGl0OwoKbXkgJHVhID0gTFdQOjpVc2VyQWdlbnQtPm5ldygpOwoKaWYoIEVQ
+cmludHM6OlV0aWxzOjppc19zZXQoICRFTlZ7SFRUUF9wcm94eX0gKSApCnsKCSR1YS0+cHJveHko
+ICdodHRwJywgJEVOVntIVFRQX3Byb3h5fSApCn0KCm15ICRhbHRfdXJsID0gVVJJLT5uZXcoICRy
+ZXBvLT5jb25maWcoICdhbHRtZXRyaWMnLCAnYmFzZV91cmwnICkuIi8kYWx0X3R5cGUvJGFsdF9p
+ZCIgKTsKCm15ICRhcGlfa2V5ID0gJHJlcG8tPmNvbmZpZyggJ2FsdG1ldHJpYycsICdhcGlfa2V5
+JyApOwoKaWYoIEVQcmludHM6OlV0aWxzOjppc19zZXQoICRhcGlfa2V5ICkgKQp7CgkkYWx0X3Vy
+bC0+cXVlcnlfZm9ybSgga2V5ID0+ICRhcGlfa2V5ICk7Cn0gCgpteSAkcmVxID0gSFRUUDo6UmVx
+dWVzdC0+bmV3KCBHRVQgPT4gJGFsdF91cmwgKTsKCm15ICRyZXMgPSAkdWEtPnJlcXVlc3QoJHJl
+cSk7CgpiaW5tb2RlKCBTVERPVVQsICI6dXRmOCIgKTsKCiMgbm90ZSB3ZSBhbHdheXMgcmVwbHkg
+dG8gdGhlIEFqYXggcmVxdWVzdCB3aXRoIDIwMCBPSwpFUHJpbnRzOjpBcGFjaGU6OkFuQXBhY2hl
+OjpzZW5kX3N0YXR1c19saW5lKCAkcmVwby0+Z2V0X3JlcXVlc3QsIDIwMCApOwokcmVwby0+c2Vu
+ZF9odHRwX2hlYWRlciggImNvbnRlbnRfdHlwZSI9PiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNl
+dD11dGYtOCIgKTsKCmlmKCAkcmVzLT5pc19zdWNjZXNzICkgCnsKCXByaW50IFNURE9VVCAkcmVz
+LT5jb250ZW50Owp9CmVsc2UKewoJIyBvdGhlciBlcnJvciBjb2RlczoKCSMgNDIwOiByYXRlIGxp
+bWl0ZWQKCSMgNTAyOiBBUEkgZG93biBmb3IgbWFpbnRlbmFuY2UKCSMgNDAzOiB1bmF1dGhvcmlz
+ZWQgY2FsbAoJbXkgJGVycm1zZzsKCWlmKCAkcmVzLT5jb2RlID09IDQwNCApCgl7CgkJJGVycm1z
+ZyA9ICRyZXBvLT5waHJhc2UoICdsaWIvYWx0bWV0cmljOm5vdF9mb3VuZCcgKTsKCX0KCWVsc2UK
+CXsKCQkkZXJybXNnID0gJHJlcG8tPnBocmFzZSggJ2xpYi9hbHRtZXRyaWM6dW5rbm93bl9lcnJv
+cicgKTsKCX0KCglwcmludCBTVERPVVQgJ3sgImVycm9yIjogIjEiLCAibWVzc2FnZSI6ICInLiRl
+cnJtc2cuJyIgfSc7Cn0KCmV4aXQ7Cg==
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>lang/en/phrases/altmetric.xml</filename>
-          <mime_type>application/xml</mime_type>
+          <mime_type>inode/symlink</mime_type>
           <hash>53dc9174be295ccf40bd9f7efe978daf</hash>
           <hash_type>MD5</hash_type>
           <filesize>563</filesize>
@@ -91,11 +98,12 @@ cmljOnRpdGxlIj5BbHRtZXRyaWM8L2VwcDpwaHJhc2U+Cgo8L2VwcDpwaHJhc2VzPgo=
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/Altmetric.pm</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>c025fb995fbfc91a50a0bcc3b7fe655d</hash>
+          <mime_type>inode/symlink</mime_type>
+          <hash>3e3f1a4ffefedd62970c92bbaa56a8cd</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1356</filesize>
+          <filesize>1355</filesize>
           <data encoding='base64'>IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
 IyMjIyMjIyMjIyMjCiMKIyBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVBNQzo6QWx0bWV0cmlj
 CiMKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
@@ -119,39 +127,41 @@ b3JtKAoJCQlzY3JlZW4gPT4gIkFkbWluOjpDb25maWc6OlZpZXc6OlBlcmwiLAoJCQljb25maWdm
 aWxlID0+ICJjZmcuZC8kMSIsCgkJKTsKCQkkc2VsZi0+e3JlcG9zaXRvcnl9LT5yZWRpcmVjdCgg
 JHVybCApOwoJCWV4aXQoIDAgKTsKCX0KCgkkc2VsZi0+e3Byb2Nlc3Nvcn0tPntzY3JlZW5pZH0g
 PSAiQWRtaW46OkVQTSI7CgoJJHNlbGYtPntwcm9jZXNzb3J9LT5hZGRfbWVzc2FnZSggImVycm9y
-IiwgJHNlbGYtPmh0bWxfcGhyYXNlKCAibWlzc2luZyIgKSApOwp9CgoxOwoK
+IiwgJHNlbGYtPmh0bWxfcGhyYXNlKCAibWlzc2luZyIgKSApOwp9CgoxOwo=
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>8da359a5c9f1d92056f1d0e2265b4ca2</hash>
+          <mime_type>inode/symlink</mime_type>
+          <hash>ebc77899240d8a7b68be80e134a508dd</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1067</filesize>
-          <data encoding='base64'>cGFja2FnZSBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVByaW50OjpCb3g6OkFsdG1ldHJpYzsN
-Cg0Kb3VyIEBJU0EgPSAoICdFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVByaW50OjpCb3gnICk7
-DQoNCnVzZSBzdHJpY3Q7DQoNCnN1YiBjYW5fYmVfdmlld2VkDQp7DQogICAgICAgIG15KCAkc2Vs
-ZiApID0gQF87DQoNCiAgICAgICAgcmV0dXJuIDAgaWYgJHNlbGYtPntzZXNzaW9ufS0+Z2V0X3Nl
-Y3VyZTsNCiAgICAgICAgcmV0dXJuIDAgaWYoICFkZWZpbmVkICRzZWxmLT57cHJvY2Vzc29yfS0+
-e2VwcmludH0gKTsNCiAgICAgICAgcmV0dXJuIDAgaWYoICEkc2VsZi0+e3Nlc3Npb259LT5jYW5f
-Y2FsbCggImFsdG1ldHJpYyIsICJnZXRfdHlwZV9hbmRfaWQiICkgKTsNCgkJDQogICAgICAgIHJl
-dHVybiAxOw0KfQ0KDQpzdWIgcmVuZGVyDQp7DQogICAgICAgIG15KCAkc2VsZiApID0gQF87DQoN
-CiAgICAgICAgbXkgJHNlc3Npb24gPSAkc2VsZi0+e3Nlc3Npb259Ow0KDQogICAgICAgIG15ICRm
-cmFnID0gJHNlc3Npb24tPnhtbC0+Y3JlYXRlX2RvY3VtZW50X2ZyYWdtZW50Ow0KDQogICAgICAg
-IG15ICggJHR5cGUsICRpZCApID0gJHNlc3Npb24tPmNhbGwoIFsgImFsdG1ldHJpYyIsICJnZXRf
-dHlwZV9hbmRfaWQiIF0sICRzZWxmLT57cHJvY2Vzc29yfS0+e2VwcmludH0gKTsNCg0KICAgICAg
-ICByZXR1cm4gJGZyYWcgaWYgKCAhZGVmaW5lZCAkdHlwZSB8fCAhZGVmaW5lZCAkaWQgKTsNCgkJ
-DQogICAgICAgIG15ICRkaXYgPSAkZnJhZy0+YXBwZW5kQ2hpbGQoICRzZXNzaW9uLT5tYWtlX2Vs
-ZW1lbnQoICdkaXYnLCBpZCA9PiAnYWx0bWV0cmljX3N1bW1hcnlfcGFnZScsICJkYXRhLWFsdG1l
-dHJpYy1pZC10eXBlIiA9PiAkdHlwZSwgImRhdGEtYWx0bWV0cmljLWlkIiA9PiAkaWQgKSApOw0K
-DQoJCSRmcmFnLT5hcHBlbmRDaGlsZCggJHNlc3Npb24tPm1ha2VfamF2YXNjcmlwdCggPDxFT0og
-KSApOw0KbmV3IEVQX0FsdG1ldHJpY19CYWRnZSggJ2FsdG1ldHJpY19zdW1tYXJ5X3BhZ2UnICk7
-DQpFT0oNCg0KICAgICAgICByZXR1cm4gJGZyYWc7DQp9DQoNCjE7DQo=
+          <filesize>1028</filesize>
+          <data encoding='base64'>cGFja2FnZSBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVByaW50OjpCb3g6OkFsdG1ldHJpYzsK
+Cm91ciBASVNBID0gKCAnRVByaW50czo6UGx1Z2luOjpTY3JlZW46OkVQcmludDo6Qm94JyApOwoK
+dXNlIHN0cmljdDsKCnN1YiBjYW5fYmVfdmlld2VkCnsKICAgICAgICBteSggJHNlbGYgKSA9IEBf
+OwoKICAgICAgICByZXR1cm4gMCBpZiAkc2VsZi0+e3Nlc3Npb259LT5nZXRfc2VjdXJlOwogICAg
+ICAgIHJldHVybiAwIGlmKCAhZGVmaW5lZCAkc2VsZi0+e3Byb2Nlc3Nvcn0tPntlcHJpbnR9ICk7
+CiAgICAgICAgcmV0dXJuIDAgaWYoICEkc2VsZi0+e3Nlc3Npb259LT5jYW5fY2FsbCggImFsdG1l
+dHJpYyIsICJnZXRfdHlwZV9hbmRfaWQiICkgKTsKCQkKICAgICAgICByZXR1cm4gMTsKfQoKc3Vi
+IHJlbmRlcgp7CiAgICAgICAgbXkoICRzZWxmICkgPSBAXzsKCiAgICAgICAgbXkgJHNlc3Npb24g
+PSAkc2VsZi0+e3Nlc3Npb259OwoKICAgICAgICBteSAkZnJhZyA9ICRzZXNzaW9uLT54bWwtPmNy
+ZWF0ZV9kb2N1bWVudF9mcmFnbWVudDsKCiAgICAgICAgbXkgKCAkdHlwZSwgJGlkICkgPSAkc2Vz
+c2lvbi0+Y2FsbCggWyAiYWx0bWV0cmljIiwgImdldF90eXBlX2FuZF9pZCIgXSwgJHNlbGYtPntw
+cm9jZXNzb3J9LT57ZXByaW50fSApOwoKICAgICAgICByZXR1cm4gJGZyYWcgaWYgKCAhZGVmaW5l
+ZCAkdHlwZSB8fCAhZGVmaW5lZCAkaWQgKTsKCQkKICAgICAgICBteSAkZGl2ID0gJGZyYWctPmFw
+cGVuZENoaWxkKCAkc2Vzc2lvbi0+bWFrZV9lbGVtZW50KCAnZGl2JywgaWQgPT4gJ2FsdG1ldHJp
+Y19zdW1tYXJ5X3BhZ2UnLCAiZGF0YS1hbHRtZXRyaWMtaWQtdHlwZSIgPT4gJHR5cGUsICJkYXRh
+LWFsdG1ldHJpYy1pZCIgPT4gJGlkICkgKTsKCgkJJGZyYWctPmFwcGVuZENoaWxkKCAkc2Vzc2lv
+bi0+bWFrZV9qYXZhc2NyaXB0KCA8PEVPSiApICk7Cm5ldyBFUF9BbHRtZXRyaWNfQmFkZ2UoICdh
+bHRtZXRyaWNfc3VtbWFyeV9wYWdlJyApOwpFT0oKCiAgICAgICAgcmV0dXJuICRmcmFnOwp9Cgox
+Owo=
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>static/images/epm/altmetric.png</filename>
-          <mime_type>image/png</mime_type>
+          <mime_type>inode/symlink</mime_type>
           <hash>09eaeb9c2762557023d6d654c9b28239</hash>
           <hash_type>MD5</hash_type>
           <filesize>112883</filesize>
@@ -2139,70 +2149,71 @@ MSswMTowMGiQaVUAAAAASUVORK5CYII=
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>static/javascript/auto/99_altmetric.js</filename>
-          <mime_type>text/x-c</mime_type>
-          <hash>26cc3c082ad5179e3174912a47e4d040</hash>
+          <mime_type>inode/symlink</mime_type>
+          <hash>70777f299ebec1d59eb800f81ca75ae0</hash>
           <hash_type>MD5</hash_type>
-          <filesize>3074</filesize>
-          <data encoding='base64'>dmFyIEVQX0FsdG1ldHJpY19CYWRnZSA9IENsYXNzLmNyZWF0ZSggew0KDQogICAgICAgIGluaXRp
-YWxpemU6IGZ1bmN0aW9uKGlkKSB7DQoNCgkJaWYoIGlkID09IG51bGwgKQ0KCQkJcmV0dXJuOw0K
-DQoJCXRoaXMuZWxlbWVudCA9ICQoIGlkICk7DQoJCWlmKCB0aGlzLmVsZW1lbnQgPT0gbnVsbCAp
-DQoJCQlyZXR1cm47DQoNCgkJdGhpcy5hbHRtZXRyaWNfaWQgPSB0aGlzLmVsZW1lbnQuZ2V0QXR0
-cmlidXRlKCAnZGF0YS1hbHRtZXRyaWMtaWQnICk7DQoJCXRoaXMuYWx0bWV0cmljX2lkX3R5cGUg
-PSB0aGlzLmVsZW1lbnQuZ2V0QXR0cmlidXRlKCAnZGF0YS1hbHRtZXRyaWMtaWQtdHlwZScgKTsN
-CgkJDQoJCWlmKCB0aGlzLmFsdG1ldHJpY19pZCA9PSBudWxsIHx8IHRoaXMuYWx0bWV0cmljX2lk
-X3R5cGUgPT0gbnVsbCApDQoJCQlyZXR1cm47DQoNCgkJdGhpcy5jYWxsYmFjaygpOw0KICAgICAg
-ICB9LA0KDQoJY2FsbGJhY2s6IGZ1bmN0aW9uKCkgew0KICAgICAgICAgICAgICAgIG5ldyBBamF4
-LlJlcXVlc3QoIGVwcmludHNfaHR0cF9jZ2lyb290ICsgIi9hbHRtZXRyaWM/aWRfdHlwZT0iICsg
-dGhpcy5hbHRtZXRyaWNfaWRfdHlwZSArICImaWQ9IiArIHRoaXMuYWx0bWV0cmljX2lkLCB7DQog
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1ldGhvZDogJ2dldCcsDQogICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgIG9uU3VjY2VzczogdGhpcy5kcmF3LmJpbmQodGhpcyksDQog
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uRmFpbHVyZTogZnVuY3Rpb24ocmVzcG9u
-c2UpIHsgIH0uYmluZCh0aGlzKSANCiAgICAgICAgICAgICAgICB9KTsgDQoJfSwNCg0KCWRyYXc6
-IGZ1bmN0aW9uKHJlc3BvbnNlKSB7DQoNCiAgICAgICAgICAgICAgICB2YXIganNvbiA9IHJlc3Bv
-bnNlLnJlc3BvbnNlVGV4dC5ldmFsSlNPTigpOw0KDQoJCWlmKCBqc29uLmVycm9yICE9IG51bGwg
-JiYganNvbi5lcnJvciApDQoJCXsNCgkJCXZhciBlcnJwID0gbmV3IEVsZW1lbnQoICdwJywgeyAn
-Y2xhc3MnOiAnYWx0bWV0cmljX2Vycm9yJyB9ICk7DQoJCQllcnJwLnVwZGF0ZSgganNvbi5tZXNz
-YWdlICk7DQoJCQl0aGlzLmVsZW1lbnQudXBkYXRlKCBlcnJwICk7DQoJCQlyZXR1cm47DQoJCX0N
-Cg0KCQl2YXIgaW1nID0gbmV3IEVsZW1lbnQoICdpbWcnLCB7ICdzcmMnOiBqc29uLmltYWdlcy5t
-ZWRpdW0sICdjbGFzcyc6ICdhbHRtZXRyaWNfZG9udXQnIH0gKTsNCgkNCgkJdGhpcy5lbGVtZW50
-LnVwZGF0ZSggaW1nICk7IA0KDQoJCXZhciBkZXRhaWxzX3BhbmVsID0gbmV3IEVsZW1lbnQoICdk
-aXYnLCB7ICdjbGFzcyc6ICdhbHRtZXRyaWNfZGV0YWlsc19wYW5lbCcgfSApOw0KCQl0aGlzLmVs
-ZW1lbnQuaW5zZXJ0KCBkZXRhaWxzX3BhbmVsICk7DQoNCgkJLyogMjAxNi0wOS0wMSBGcm9tOiBo
-dHRwOi8vYXBpLmFsdG1ldHJpYy5jb20vZG9jcy9jYWxsX2NpdGF0aW9ucy5odG1sLCAndHlwZXMn
-IGF2YWlsYWJsZSBhcmU6DQoJCSAgcG9zdHMgKGNvbWJpbmVkIHRvdGFsIG9mIGJlbG93PykNCgkJ
-ICBkZWxpY2lvdXMsIGZid2FsbHMsIGZlZWRzLCBmb3J1bSwgZ3BsdXMsIGxpbmtlZGluLCBtc20s
-IHBlZXJfcmV2aWV3X3NpdGVzLCBwaW5uZXJzLCANCgkJICBwb2xpY2llcywgcXMsIHJkdHMsIHJo
-LCB0d2VldGVycywgdmlkZW9zLCB3ZWlibywgd2lraXBlZGlhDQoJCSAgQW55IG9mIHRoZSBhYm92
-ZSBjYW4gYmUgYWRkZWQgdG8gdGhlIGFycmF5IGJlbG93Lg0KCQkqLw0KCQl2YXIgdHlwZXMgPSBb
-ICd0d2VldGVycycsICdyZHRzJywgJ2ZlZWRzJywgJ2dwbHVzJywgJ21zbScsICdmYndhbGxzJywg
-J3ZpZGVvcycgXTsNCgkJdmFyIGRhdGEgPSBuZXcgSGFzaCgganNvbiApOw0KDQoJCWZvciggdmFy
-IGk9MDsgaSA8IHR5cGVzLmxlbmd0aDsgaSsrICkNCgkJew0KCQkJdmFyIHZhbHVlID0gZGF0YS5n
-ZXQoICJjaXRlZF9ieV8iICsgdHlwZXNbaV0gKyAiX2NvdW50IiApOw0KCQkJaWYoIHZhbHVlICE9
-IG51bGwgKQ0KCQkJew0KCQkJCXZhciByb3cgPSBuZXcgRWxlbWVudCggJ2RpdicsIHsgJ2NsYXNz
-JzogJ2FsdG1ldHJpY19yb3cgYWx0bWV0cmljXycgKyB0eXBlc1tpXSB9ICk7DQoJCQkJdmFyIGZp
-Z3VyZSA9IG5ldyBFbGVtZW50KCAnc3BhbicgKTsNCgkJCQlmaWd1cmUudXBkYXRlKCB2YWx1ZSAp
-Ow0KCQkJCXJvdy51cGRhdGUoIGZpZ3VyZSApOw0KCQkJCWRldGFpbHNfcGFuZWwuaW5zZXJ0KCBy
-b3cgKTsNCgkJCX0NCgkJfQ0KDQoJCWRldGFpbHNfcGFuZWwuaW5zZXJ0KCBuZXcgRWxlbWVudCgg
-J2JyJyApICk7DQoNCgkJdmFyIHJlYWRlcnMgPSBbICdtZW5kZWxleScsICdjb25ub3RlYScsICdj
-aXRldWxpa2UnIF07DQoJCWRhdGEgPSBuZXcgSGFzaCgganNvbi5yZWFkZXJzICk7DQoJDQoJCWZv
-ciggdmFyIGk9MDsgaSA8IHJlYWRlcnMubGVuZ3RoOyBpKysgKQ0KCQl7DQoJCQl2YXIgdmFsdWUg
-PSBkYXRhLmdldCggcmVhZGVyc1tpXSApOw0KCQkJaWYoICggdmFsdWUgIT0gbnVsbCApICYmICgg
-dmFsdWUgIT0gMCApICkNCgkJCXsNCgkJCQl2YXIgcm93ID0gbmV3IEVsZW1lbnQoICdkaXYnLCB7
-ICdjbGFzcyc6ICdhbHRtZXRyaWNfcm93IGFsdG1ldHJpY18nICsgcmVhZGVyc1tpXSB9ICk7DQoJ
-CQkJdmFyIGZpZ3VyZSA9IG5ldyBFbGVtZW50KCAnc3BhbicgKTsNCgkJCQlmaWd1cmUudXBkYXRl
-KCB2YWx1ZSApOw0KCQkJCXJvdy51cGRhdGUoIGZpZ3VyZSApOw0KCQkJCWRldGFpbHNfcGFuZWwu
-aW5zZXJ0KCByb3cgKTsNCgkJCX0NCgkJfQ0KCQkNCgkJdmFyIGFsdGxpbmsgPSBuZXcgRWxlbWVu
-dCggJ2EnLCB7ICdocmVmJzoganNvbi5kZXRhaWxzX3VybCwgJ2NsYXNzJzogJ2FsdG1ldHJpY19k
-ZXRhaWxzJywgJ3RhcmdldCc6ICdfYmxhbmsnIH0gKTsNCgkJYWx0bGluay51cGRhdGUoICJWaWV3
-IGRldGFpbHMgb24gQWx0bWV0cmljJ3Mgd2Vic2l0ZSIgKTsNCgkJDQoJCXRoaXMuZWxlbWVudC5p
-bnNlcnQoIG5ldyBFbGVtZW50KCAnZGl2JywgeyAnc3R5bGUnIDogJ2NsZWFyOmJvdGgnIH0gKSAp
-Ow0KDQoJCXRoaXMuZWxlbWVudC5pbnNlcnQoIGFsdGxpbmsgKTsNCgl9LA0KDQp9ICk7DQo=
+          <filesize>3009</filesize>
+          <data encoding='base64'>dmFyIEVQX0FsdG1ldHJpY19CYWRnZSA9IENsYXNzLmNyZWF0ZSggewoKICAgICAgICBpbml0aWFs
+aXplOiBmdW5jdGlvbihpZCkgewoKCQlpZiggaWQgPT0gbnVsbCApCgkJCXJldHVybjsKCgkJdGhp
+cy5lbGVtZW50ID0gJCggaWQgKTsKCQlpZiggdGhpcy5lbGVtZW50ID09IG51bGwgKQoJCQlyZXR1
+cm47CgoJCXRoaXMuYWx0bWV0cmljX2lkID0gdGhpcy5lbGVtZW50LmdldEF0dHJpYnV0ZSggJ2Rh
+dGEtYWx0bWV0cmljLWlkJyApOwoJCXRoaXMuYWx0bWV0cmljX2lkX3R5cGUgPSB0aGlzLmVsZW1l
+bnQuZ2V0QXR0cmlidXRlKCAnZGF0YS1hbHRtZXRyaWMtaWQtdHlwZScgKTsKCQkKCQlpZiggdGhp
+cy5hbHRtZXRyaWNfaWQgPT0gbnVsbCB8fCB0aGlzLmFsdG1ldHJpY19pZF90eXBlID09IG51bGwg
+KQoJCQlyZXR1cm47CgoJCXRoaXMuY2FsbGJhY2soKTsKICAgICAgICB9LAoKCWNhbGxiYWNrOiBm
+dW5jdGlvbigpIHsKICAgICAgICAgICAgICAgIG5ldyBBamF4LlJlcXVlc3QoIGVwcmludHNfaHR0
+cF9jZ2lyb290ICsgIi9hbHRtZXRyaWM/aWRfdHlwZT0iICsgdGhpcy5hbHRtZXRyaWNfaWRfdHlw
+ZSArICImaWQ9IiArIHRoaXMuYWx0bWV0cmljX2lkLCB7CiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgbWV0aG9kOiAnZ2V0JywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBv
+blN1Y2Nlc3M6IHRoaXMuZHJhdy5iaW5kKHRoaXMpLAogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIG9uRmFpbHVyZTogZnVuY3Rpb24ocmVzcG9uc2UpIHsgIH0uYmluZCh0aGlzKSAKICAg
+ICAgICAgICAgICAgIH0pOyAKCX0sCgoJZHJhdzogZnVuY3Rpb24ocmVzcG9uc2UpIHsKCiAgICAg
+ICAgICAgICAgICB2YXIganNvbiA9IHJlc3BvbnNlLnJlc3BvbnNlVGV4dC5ldmFsSlNPTigpOwoK
+CQlpZigganNvbi5lcnJvciAhPSBudWxsICYmIGpzb24uZXJyb3IgKQoJCXsKCQkJdmFyIGVycnAg
+PSBuZXcgRWxlbWVudCggJ3AnLCB7ICdjbGFzcyc6ICdhbHRtZXRyaWNfZXJyb3InIH0gKTsKCQkJ
+ZXJycC51cGRhdGUoIGpzb24ubWVzc2FnZSApOwoJCQl0aGlzLmVsZW1lbnQudXBkYXRlKCBlcnJw
+ICk7CgkJCXJldHVybjsKCQl9CgoJCXZhciBpbWcgPSBuZXcgRWxlbWVudCggJ2ltZycsIHsgJ3Ny
+Yyc6IGpzb24uaW1hZ2VzLm1lZGl1bSwgJ2NsYXNzJzogJ2FsdG1ldHJpY19kb251dCcgfSApOwoJ
+CgkJdGhpcy5lbGVtZW50LnVwZGF0ZSggaW1nICk7IAoKCQl2YXIgZGV0YWlsc19wYW5lbCA9IG5l
+dyBFbGVtZW50KCAnZGl2JywgeyAnY2xhc3MnOiAnYWx0bWV0cmljX2RldGFpbHNfcGFuZWwnIH0g
+KTsKCQl0aGlzLmVsZW1lbnQuaW5zZXJ0KCBkZXRhaWxzX3BhbmVsICk7CgoJCS8qIDIwMTYtMDkt
+MDEgRnJvbTogaHR0cDovL2FwaS5hbHRtZXRyaWMuY29tL2RvY3MvY2FsbF9jaXRhdGlvbnMuaHRt
+bCwgJ3R5cGVzJyBhdmFpbGFibGUgYXJlOgoJCSAgcG9zdHMgKGNvbWJpbmVkIHRvdGFsIG9mIGJl
+bG93PykKCQkgIGRlbGljaW91cywgZmJ3YWxscywgZmVlZHMsIGZvcnVtLCBncGx1cywgbGlua2Vk
+aW4sIG1zbSwgcGVlcl9yZXZpZXdfc2l0ZXMsIHBpbm5lcnMsIAoJCSAgcG9saWNpZXMsIHFzLCBy
+ZHRzLCByaCwgdHdlZXRlcnMsIHZpZGVvcywgd2VpYm8sIHdpa2lwZWRpYQoJCSAgQW55IG9mIHRo
+ZSBhYm92ZSBjYW4gYmUgYWRkZWQgdG8gdGhlIGFycmF5IGJlbG93LgoJCSovCgkJdmFyIHR5cGVz
+ID0gWyAndHdlZXRlcnMnLCAncmR0cycsICdmZWVkcycsICdncGx1cycsICdtc20nLCAnZmJ3YWxs
+cycsICd2aWRlb3MnIF07CgkJdmFyIGRhdGEgPSBuZXcgSGFzaCgganNvbiApOwoKCQlmb3IoIHZh
+ciBpPTA7IGkgPCB0eXBlcy5sZW5ndGg7IGkrKyApCgkJewoJCQl2YXIgdmFsdWUgPSBkYXRhLmdl
+dCggImNpdGVkX2J5XyIgKyB0eXBlc1tpXSArICJfY291bnQiICk7CgkJCWlmKCB2YWx1ZSAhPSBu
+dWxsICkKCQkJewoJCQkJdmFyIHJvdyA9IG5ldyBFbGVtZW50KCAnZGl2JywgeyAnY2xhc3MnOiAn
+YWx0bWV0cmljX3JvdyBhbHRtZXRyaWNfJyArIHR5cGVzW2ldIH0gKTsKCQkJCXZhciBmaWd1cmUg
+PSBuZXcgRWxlbWVudCggJ3NwYW4nICk7CgkJCQlmaWd1cmUudXBkYXRlKCB2YWx1ZSApOwoJCQkJ
+cm93LnVwZGF0ZSggZmlndXJlICk7CgkJCQlkZXRhaWxzX3BhbmVsLmluc2VydCggcm93ICk7CgkJ
+CX0KCQl9CgoJCWRldGFpbHNfcGFuZWwuaW5zZXJ0KCBuZXcgRWxlbWVudCggJ2JyJyApICk7CgoJ
+CXZhciByZWFkZXJzID0gWyAnbWVuZGVsZXknLCAnY29ubm90ZWEnLCAnY2l0ZXVsaWtlJyBdOwoJ
+CWRhdGEgPSBuZXcgSGFzaCgganNvbi5yZWFkZXJzICk7CgkKCQlmb3IoIHZhciBpPTA7IGkgPCBy
+ZWFkZXJzLmxlbmd0aDsgaSsrICkKCQl7CgkJCXZhciB2YWx1ZSA9IGRhdGEuZ2V0KCByZWFkZXJz
+W2ldICk7CgkJCWlmKCAoIHZhbHVlICE9IG51bGwgKSAmJiAoIHZhbHVlICE9IDAgKSApCgkJCXsK
+CQkJCXZhciByb3cgPSBuZXcgRWxlbWVudCggJ2RpdicsIHsgJ2NsYXNzJzogJ2FsdG1ldHJpY19y
+b3cgYWx0bWV0cmljXycgKyByZWFkZXJzW2ldIH0gKTsKCQkJCXZhciBmaWd1cmUgPSBuZXcgRWxl
+bWVudCggJ3NwYW4nICk7CgkJCQlmaWd1cmUudXBkYXRlKCB2YWx1ZSApOwoJCQkJcm93LnVwZGF0
+ZSggZmlndXJlICk7CgkJCQlkZXRhaWxzX3BhbmVsLmluc2VydCggcm93ICk7CgkJCX0KCQl9CgkJ
+CgkJdmFyIGFsdGxpbmsgPSBuZXcgRWxlbWVudCggJ2EnLCB7ICdocmVmJzoganNvbi5kZXRhaWxz
+X3VybCArICcmZG9tYWluPScgKyBkb2N1bWVudC5kb21haW4sICdjbGFzcyc6ICdhbHRtZXRyaWNf
+ZGV0YWlscycsICd0YXJnZXQnOiAnX2JsYW5rJyB9ICk7CgkJYWx0bGluay51cGRhdGUoICJWaWV3
+IGRldGFpbHMgb24gQWx0bWV0cmljJ3Mgd2Vic2l0ZSIgKTsKCQkKCQl0aGlzLmVsZW1lbnQuaW5z
+ZXJ0KCBuZXcgRWxlbWVudCggJ2RpdicsIHsgJ3N0eWxlJyA6ICdjbGVhcjpib3RoJyB9ICkgKTsK
+CgkJdGhpcy5lbGVtZW50Lmluc2VydCggYWx0bGluayApOwoJfSwKCn0gKTsK
 </data>
         </file>
         <file>
+          <datasetid>document</datasetid>
           <filename>static/style/auto/altmetric.css</filename>
-          <mime_type>text/x-c</mime_type>
+          <mime_type>inode/symlink</mime_type>
           <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
           <hash_type>MD5</hash_type>
           <filesize>1918</filesize>
@@ -2243,16 +2254,18 @@ CWJvcmRlci1sZWZ0OiAxNnB4IHNvbGlkICNCQ0QyRUY7Cn0KCg==
 </data>
         </file>
       </files>
-      <mime_type>text/x-c</mime_type>
-      <format>text</format>
+      <pos>lib</pos>
+      <mime_type>inode/symlink</mime_type>
+      <format>other</format>
       <main>static/style/auto/altmetric.css</main>
       <content>install</content>
     </document>
     <document>
       <files>
         <file>
+          <datasetid>document</datasetid>
           <filename>static/images/epm/altmetric.png</filename>
-          <mime_type>image/png</mime_type>
+          <mime_type>inode/symlink</mime_type>
           <hash>09eaeb9c2762557023d6d654c9b28239</hash>
           <hash_type>MD5</hash_type>
           <filesize>112883</filesize>
@@ -4240,12 +4253,13 @@ MSswMTowMGiQaVUAAAAASUVORK5CYII=
 </data>
         </file>
       </files>
+      <pos>lib</pos>
       <format>image</format>
       <main>static/images/epm/altmetric.png</main>
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <controller>EPMC::Altmetric</controller>
   <creators>
     <item>
@@ -4270,10 +4284,10 @@ MSswMTowMGiQaVUAAAAASUVORK5CYII=
       <id>https://github.com/jesusbagpuss</id>
     </item>
   </creators>
-  <datestamp>2016-09-09 15:39:35</datestamp>
+  <datestamp>2018-02-19 16:39:14</datestamp>
   <title>Altmetric</title>
   <description>Display altmetric&apos;s badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/</description>
   <requirements>An optional API key from Altmetric.</requirements>
-  <home_page>http://www.altmetric.com/</home_page>
+  <home_page>https://github.com/eprintsug/altmetric/</home_page>
   <icon>images/epm/altmetric.png</icon>
 </epm>
