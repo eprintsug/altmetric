@@ -12,7 +12,7 @@ See note in z_altmatric.pl for details on how to register your repository domain
 **Version 1.1.0**: Adds ability to use other IDs supported by Altmetric API e.g. ISBN.
 The data used from the EPrint is now a config option so repositories can tailor this to suit the data they hold. See cfg.d/z_altmetric.pl.
 
-The attributes used for the rednering have changed to:
+The attributes used for the rendering have changed to:
 
 * `data-altmetric-id`
 * `data-altmetric-id-type`
