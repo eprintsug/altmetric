@@ -1,57 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://192.168.23.142/id/epm/altmetric'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://localhost:8080/id/epm/altmetric'>
   <epmid>altmetric</epmid>
-  <uri>http://test.eprints/id/epm/altmetric</uri>
+  <uri>http://192.168.23.142/id/epm/altmetric</uri>
   <documents>
     <document>
       <files>
         <file>
           <datasetid>document</datasetid>
-          <filename>lang/en/phrases/altmetric.xml</filename>
-          <mime_type>application/xml</mime_type>
-          <hash>53dc9174be295ccf40bd9f7efe978daf</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>563</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>static/images/epm/altmetric.png</filename>
-          <mime_type>image/png</mime_type>
-          <hash>09eaeb9c2762557023d6d654c9b28239</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>112883</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>static/javascript/auto/99_altmetric.js</filename>
-          <mime_type>text/x-c</mime_type>
-          <hash>fa494b4346b21d4cbe715ff95e4b1a5d</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>3078</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>static/style/auto/altmetric.css</filename>
-          <mime_type>text/x-c</mime_type>
-          <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1918</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>plugins/EPrints/Plugin/Screen/EPMC/Altmetric.pm</filename>
+          <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>3e3f1a4ffefedd62970c92bbaa56a8cd</hash>
+          <hash>663d05eef5eafc4441e9fb175d159196</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1355</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>ebc77899240d8a7b68be80e134a508dd</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1028</filesize>
+          <filesize>1716</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -61,37 +21,14 @@
           <hash_type>MD5</hash_type>
           <filesize>1333</filesize>
         </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
-          <mime_type>text/plain</mime_type>
-          <hash>663d05eef5eafc4441e9fb175d159196</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1716</filesize>
-        </file>
       </files>
       <mime_type>text/plain</mime_type>
       <format>text</format>
-      <main>epm/altmetric/cfg/cfg.d/z_altmetric.pl</main>
+      <main>epm/altmetric/cgi/altmetric</main>
       <content>install</content>
     </document>
-    <document>
-      <files>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>static/images/epm/altmetric.png</filename>
-          <mime_type>image/png</mime_type>
-          <hash>09eaeb9c2762557023d6d654c9b28239</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>112883</filesize>
-        </file>
-      </files>
-      <format>image</format>
-      <main>static/images/epm/altmetric.png</main>
-      <content>coverimage</content>
-    </document>
   </documents>
-  <version>1.2.0</version>
+  <version>1.2.1</version>
   <controller>EPMC::Altmetric</controller>
   <creators>
     <item>
