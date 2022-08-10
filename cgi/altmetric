@@ -11,6 +11,7 @@ my $alt_type = $repo->param( 'id_type' ) or exit;
 my $alt_id = $repo->param( 'id' ) or exit;
 
 my $ua = LWP::UserAgent->new();
+$ua->agent( 'eprints/' . EPrints->human_version );
 
 if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
 {
