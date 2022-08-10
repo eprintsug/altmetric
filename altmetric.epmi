@@ -55,8 +55,8 @@
   </creators>
   <datestamp>2018-06-21 21:29:53</datestamp>
   <title>Altmetric</title>
-  <description>Display altmetric&apos;s badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/</description>
-  <requirements>An optional API key from Altmetric.</requirements>
+  <description>Display altmetric&apos;s badges on summary pages. Works out-of-the-box. Visit the altmetric web-site for more information about the badges: https://www.altmetric.com/products/free-tools/institutional-repository-badges/</description>
+  <requirements>None, although an optional free API key from Altmetric may be useful for busy repositories.</requirements>
   <home_page>https://github.com/eprintsug/altmetric/</home_page>
   <icon>images/epm/altmetric.png</icon>
 </epm>

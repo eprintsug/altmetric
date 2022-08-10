@@ -3,6 +3,10 @@
 <img align="right" height="200" src="altmetric_example.png">
 Display altmetric badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/
 
+This plugin should work out-of-the-box. 
+
+There are some configuration options available, these are detailed in the z_altmetric.pl file.
+
 Originally developed by Sébastien François (https://github.com/sebastfr); updated by @drtjmb.
 Now maintained by *us* - eprintsug!
 
