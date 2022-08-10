@@ -10,6 +10,11 @@ sub can_be_viewed
 
         return 0 if( !defined $self->{processor}->{eprint} );
         return 0 if( !$self->{session}->can_call( "altmetric", "get_type_and_id" ) );
+
+	# prevent box being rendered if type or id are not available
+	my ( $type, $id ) = $self->{session}->call( [ "altmetric", "get_type_and_id" ], $self->{processor}->{eprint} );
+	return 0 if ( !defined $type || !defined $id );
+
 		
         return 1;
 }
