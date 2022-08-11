@@ -33,7 +33,13 @@ sub render
 		
         my $div = $frag->appendChild( $session->make_element( 'div', id => 'altmetric_summary_page', "data-altmetric-id-type" => $type, "data-altmetric-id" => $id ) );
 
-		$frag->appendChild( $session->make_javascript( <<EOJ ) );
+	my $phr = "default_content";
+	if( $session->get_lang->has_phrase( $self->html_phrase_id( $phr ) ) )
+	{
+		$div->appendChild( $self->html_phrase( $phr, default_link => $session->render_link( "https://www.altmetric.com/details/$type/$id" ) ) );
+	}
+
+	$frag->appendChild( $session->make_javascript( <<EOJ ) );
 new EP_Altmetric_Badge( 'altmetric_summary_page' );
 EOJ
 
