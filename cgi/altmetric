@@ -67,7 +67,7 @@ else
               # We may be here because of an old version of LWP that is causing a security exception from the altmetric api
               # In case that is the case, we will (re) sanitize the params and use curl
 
-              if ($alt_type == 'doi' ){
+              if ($alt_type eq 'doi' ){
                 unless ( $alt_id =~ /10\.(\d+\.*)+[\/](([^\s\.])+\.*)+/  ) {
                   $errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
                   print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
@@ -75,7 +75,7 @@ else
                 }
               }
 
-              if ($alt_type == 'isbn' ){
+              if ($alt_type eq 'isbn' ){
                 unless ( $alt_id =~ /(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)/ ) {
                   $errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
                   print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';

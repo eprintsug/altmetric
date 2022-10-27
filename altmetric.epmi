@@ -1,17 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://w01.kstonprtest.da.ulcc.ac.uk:8080/id/epm/altmetric'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://localhost:8080/id/epm/altmetric'>
   <epmid>altmetric</epmid>
-  <uri>http://localhost:8080/id/epm/altmetric</uri>
+  <uri>http://w01.kstonprtest.da.ulcc.ac.uk:8080/id/epm/altmetric</uri>
   <documents>
     <document>
       <files>
         <file>
           <datasetid>document</datasetid>
+          <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>5f050dead455b3c9b9fae7fc1bd88708</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1717</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
           <filename>epm/altmetric/cgi/altmetric</filename>
           <mime_type>text/plain</mime_type>
-          <hash>f73d8dfbb76213c5761c1a0b0ffe5850</hash>
+          <hash>5cc83fab1a30e9d87d5b6f225effdd20</hash>
           <hash_type>MD5</hash_type>
           <filesize>2629</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>lang/en/phrases/altmetric.xml</filename>
+          <mime_type>application/xml</mime_type>
+          <hash>84447446fff3486eb307d7a8fb3038c2</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>735</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -31,14 +47,6 @@
         </file>
         <file>
           <datasetid>document</datasetid>
-          <filename>static/style/auto/altmetric.css</filename>
-          <mime_type>text/x-c</mime_type>
-          <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>1918</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
           <filename>static/images/epm/altmetric.png</filename>
           <mime_type>image/png</mime_type>
           <hash>09eaeb9c2762557023d6d654c9b28239</hash>
@@ -48,31 +56,23 @@
         <file>
           <datasetid>document</datasetid>
           <filename>static/javascript/auto/99_altmetric.js</filename>
-          <mime_type>text/x-c++</mime_type>
+          <mime_type>text/plain</mime_type>
           <hash>3aa7759af36e393cae20a578f4948f51</hash>
           <hash_type>MD5</hash_type>
           <filesize>3280</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
-          <filename>lang/en/phrases/altmetric.xml</filename>
-          <mime_type>application/xml</mime_type>
-          <hash>3b8f4d07b30f964059c9bf264f293326</hash>
-          <hash_type>MD5</hash_type>
-          <filesize>734</filesize>
-        </file>
-        <file>
-          <datasetid>document</datasetid>
-          <filename>epm/altmetric/cfg/cfg.d/z_altmetric.pl</filename>
+          <filename>static/style/auto/altmetric.css</filename>
           <mime_type>text/plain</mime_type>
-          <hash>5f050dead455b3c9b9fae7fc1bd88708</hash>
+          <hash>3f8edf30b515121a9190f9cc24ce29b5</hash>
           <hash_type>MD5</hash_type>
-          <filesize>1717</filesize>
+          <filesize>1918</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
       <format>text</format>
-      <main>epm/altmetric/cfg/cfg.d/z_altmetric.pl</main>
+      <main>static/style/auto/altmetric.css</main>
       <content>install</content>
     </document>
     <document>
@@ -91,7 +91,7 @@
       <content>coverimage</content>
     </document>
   </documents>
-  <version>1.2.2</version>
+  <version>1.2.3</version>
   <controller>EPMC::Altmetric</controller>
   <creators>
     <item>
