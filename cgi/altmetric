@@ -1,0 +1,91 @@
+use LWP::UserAgent;
+use EPrints;
+
+use strict;
+
+my $eprints = EPrints->new;
+my $repo = $eprints->current_repository;
+exit( 0 ) unless( defined $repo );
+
+my $alt_type = $repo->param( 'id_type' ) or exit;
+my $alt_id = $repo->param( 'id' ) or exit;
+
+# Full list if types: citations id doi pmid arxiv ads uri isbn
+# We will stick to doi and isbn here and insist
+
+my @allowed_id_types = (qw/doi isbn/);
+my $errmsg;
+
+unless ( grep {$_ eq $alt_type} @allowed_id_types ) {
+  $errmsg = $repo->phrase( 'lib/altmetric:not_found' );
+  print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
+  exit;
+}
+
+my $ua = LWP::UserAgent->new();
+
+if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
+{
+        $ua->proxy( 'http', $ENV{HTTP_proxy} )
+}
+
+my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/$alt_type/$alt_id" );
+
+my $api_key = $repo->config( 'altmetric', 'api_key' );
+
+if( EPrints::Utils::is_set( $api_key ) )
+{
+        $alt_url->query_form( key => $api_key );
+}
+
+my $req = HTTP::Request->new( GET => $alt_url );
+
+my $res = $ua->request($req);
+
+binmode( STDOUT, ":utf8" );
+
+# note we always reply to the Ajax request with 200 OK
+EPrints::Apache::AnApache::send_status_line( $repo->get_request, 200 );
+$repo->send_http_header( "content_type"=> "application/json; charset=utf-8" );
+
+if( $res->is_success )
+{
+        print STDOUT $res->content;
+}
+else
+{
+        # other error codes:
+        # 420: rate limited
+        # 502: API down for maintenance
+        # 403: unauthorised call
+        if( $res->code == 404 )
+        {
+                $errmsg = $repo->phrase( 'lib/altmetric:not_found' );
+        }
+        else
+        {
+              # We may be here because of an old version of LWP that is causing a security exception from the altmetric api
+              # In case that is the case, we will (re) sanitize the params and use curl
+
+              if ($alt_type eq 'doi' ){
+                unless ( $alt_id =~ /10\.(\d+\.*)+[\/](([^\s\.])+\.*)+/  ) {
+                  $errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
+                  print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
+                  exit;
+                }
+              }
+
+              if ($alt_type eq 'isbn' ){
+                unless ( $alt_id =~ /(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)/ ) {
+                  $errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
+                  print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
+                  exit;
+                }
+              }
+              my $response = `curl -k "$alt_url"`;
+              print STDOUT $response;
+              exit;
+        }
+}
+
+exit;

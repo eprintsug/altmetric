@@ -1,0 +1,136 @@
+#altmetric_summary_page {
+	padding: 10px;
+}
+
+a.altmetric_details {
+	margin-top: 10px;
+	display: block;
+}
+
+img.altmetric_donut {
+	float: left;
+}
+
+div.altmetric_details_panel {
+	margin-left: 10px;
+}
+
+div.altmetric_row {
+	margin-left: 120px;
+	padding-left: 5px;
+}
+
+div.altmetric_row > span {
+	font-weight: bold;
+}
+
+/* Twitter */
+div.altmetric_tweeters:before {
+	content: 'Tweeted by ';
+}
+
+div.altmetric_tweeters {
+	border-left: 16px solid #74CFED;
+}
+
+/* Blogs */
+div.altmetric_feeds:before {
+	content: 'Blogged by ';
+}
+
+div.altmetric_feeds {
+	border-left: 16px solid #FFD140;
+}
+
+/* Google+ */
+div.altmetric_gplus:before {
+	content: 'Mentioned in ';
+}
+
+div.altmetric_gplus:after {
+	content: ' Google+ posts';
+}
+
+div.altmetric_gplus {
+	border-left: 16px solid #E065BB;
+}
+
+/* News outlet */
+div.altmetric_msm:before {
+	content: 'Picked up by ';
+}
+
+div.altmetric_msm:after {
+	content: ' news outlets';
+}
+
+div.altmetric_msm {
+	border-left: 16px solid #FF0000;
+}
+
+/* Facebook */
+div.altmetric_fbwalls:before {
+	content: 'On ';
+}
+
+div.altmetric_fbwalls:after {
+	content: ' Facebook pages';
+}
+
+div.altmetric_fbwalls {
+	border-left: 16px solid #2445BD;
+}
+
+/* Reddit */
+div.altmetric_rdts:before {
+	content: 'Reddited by ';
+}
+
+div.altmetric_rdts {
+	border-left: 16px solid #D5E8F0;
+}
+
+/* Delicious */
+
+/* Forum */
+
+/* Videos */
+div.altmetric_videos:before {
+	content: 'On ';
+}
+
+div.altmetric_videos:after {
+	content: ' videos';
+}
+
+div.altmetric_videos {
+	border-left: 16px solid #98C973;
+}
+
+/* Mendeley */
+div.altmetric_mendeley:after {
+	content: ' readers on Mendeley';
+}
+
+div.altmetric_mendeley {
+	border-left: 16px solid #A60000;
+}
+
+/* Connotea */
+div.altmetric_connotea:after {
+	content: ' readers on Connotea';
+}
+
+div.altmetric_connotea {
+	border-left: 16px solid #FF4040;
+}
+
+/* CiteULike */
+div.altmetric_citeulike:after {
+	content: ' readers on CiteULike ';
+}
+
+div.altmetric_citeulike {
+	border-left: 16px solid #BCD2EF;
+}
+
