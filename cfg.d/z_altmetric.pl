@@ -22,23 +22,44 @@ $c->{altmetric}->{base_url} = "https://api.altmetric.com/v1";
 
 # Function to return id type and id.
 # For supported id_types, check the Altmetrics API reference
-# Currently, this supports doi, isbn, arXivID, PMID, ads and uri.
+# Currently they support doi, isbn, arXivID, PMID, ads and uri.
 # If an Eprints has multiple usable identifiers, the first returned value will be used.
 $c->{altmetric}{get_type_and_id} = sub {
-        my( $eprint ) = @_;
+	my( $eprint ) = @_;
 
-        if( $eprint->exists_and_set( "doi" ) ){
-                return( "doi", $eprint->value( "doi" ) );
-        }
-        if( $eprint->exists_and_set( "isbn" ) ){
-                return( "isbn", $eprint->value( "isbn" ) );
-        }
+	# recent-ish addition to EPrints core
+	my $use_ep_doi = eval "require EPrints::DOI" || 0;
 
-		# id_numbers that have 10. in them (rudimentary doi check)
-        if( $eprint->exists_and_set( "id_number" ) && ( $eprint->value( "id_number" ) =~ /\b10./ ) ){
-		        
-                return( "doi", $eprint->value( "id_number" ) );	
+	if( $eprint->exists_and_set( "doi" ) ){
+		if( $use_ep_doi )
+		{
+			my $doi = EPrints::DOI->parse( $eprint->value( "doi" ) );
+			return( "doi", $doi->to_string( noprefix => 1 ) ) if $doi;
 		}
+		else
+		{
+			return( "doi", $eprint->value( "doi" ) );
+		}
+	}
 
-		#other fields could be checked and returned here.
+	if( $eprint->exists_and_set( "isbn" ) ){
+		return( "isbn", $eprint->value( "isbn" ) );
+	}
+
+	# id_numbers that have 10. in them (rudimentary doi check)
+	if( $eprint->exists_and_set( "id_number" ) )
+	{
+		# use a good check if possible
+		if( $use_ep_doi )
+		{
+			my $doi = EPrints::DOI->parse( $eprint->value( "id_number" ) );
+			return( "doi", $doi->to_string( noprefix => 1 ) ) if $doi;
+		}
+		# or a rudimentary check if necessary	
+		elsif( $eprint->value( "id_number" ) =~ /\b10./ ){
+			return( "doi", $eprint->value( "id_number" ) );
+		}
+	}
+
+	#other fields could be checked and returned here.
 };
