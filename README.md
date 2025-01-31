@@ -3,7 +3,7 @@
 <img align="right" height="200" src="altmetric_example.png">
 Display altmetric badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/
 
-This plugin should work out-of-the-box. 
+The display of the badge is dependant on the EPrint record having a suitable identifier to display data for e.g. a DOI or ISBN
 
 There are some configuration options available, these are detailed in the z_altmetric.pl file.
 
@@ -12,11 +12,15 @@ Now maintained by *us* - eprintsug!
 
 ## Version history ##
 
-### Version 1.3.0 (not released yet) ###
+### Version 1.3.0 ###
+Released 2025-01
+
 - Adds user-agent in request made to Altmetric API
-- Displays default phrase (supports multiple languages) with link to Altmetric site before badge is displayed. See the [altmetric.xml phrase file](lib/lang/en/phrases/altmetric.xml#L9).
+- Displays a default phrase (supports multiple languages) with link to Altmetric site before badge is displayed. See the [altmetric.xml phrase file](lib/lang/en/phrases/altmetric.xml#L9).
 - Above phrase is also used when the badge is displayed 
-- If there is no Altmetric-supported identifier in the record, the EPrints Box is not rendered
+- If there is no Altmetric-supported identifiers in the record, the EPrints Box is not rendered
+- Uses the EPrints::DOI module to parse/format DOIs if the module is available
+- Limits the id_types that the cgi script will respond to. Defaults to DOI and ISBN. See comments in `cfg.d/z_altmetric.pl`
 
 If you add internationalised phrases to your repository and they don't appear to work, make sure the 'auto' javascript file has been reloaded.
 
