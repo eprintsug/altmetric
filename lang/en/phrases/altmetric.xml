@@ -8,4 +8,21 @@
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:title">Altmetric</epp:phrase>
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:default_content"><p><epc:pin name="default_link">View Altmetric information about this item</epc:pin>.</p></epp:phrase>
 
+<!-- https://details-page-api-docs.altmetric.com/data-endpoints-counts.html#response-object -->
+<epp:phrase id="lib/altmetric:cited_by_bluesky"><span><epc:pin name="count" /></span> bluesky users</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_fbwalls"><span><epc:pin name="count" /></span> Facebook pages</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_feeds"><span><epc:pin name="count" /></span> blogs</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_gplus"><span><epc:pin name="count" /></span> Google+ users</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_guidelines"><span><epc:pin name="count" /></span> guidelines</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_msm"><span><epc:pin name="count" /></span> news outlets</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_patents"><span><epc:pin name="count" /></span> patents</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_policies"><span><epc:pin name="count" /></span> policies</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_qna"><span><epc:pin name="count" /></span> Q&amp;A pages</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_rdts"><span><epc:pin name="count" /></span> Redditors</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_tweeters"><span><epc:pin name="count" /></span> X users</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_videos"><span><epc:pin name="count" /></span> YouTube creators</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_wikipedia"><span><epc:pin name="count" /></span> Wikipedia pages</epp:phrase>
+
+<epp:phrase id="lib/altmetric:readers_mendeley"><span><epc:pin name="count" /></span> Mendeley users</epp:phrase>
+
 </epp:phrases>

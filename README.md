@@ -12,7 +12,19 @@ Now maintained by *us* - eprintsug!
 
 ## Version history ##
 
-### Version 1.3.0 (not released yet) ###
+### Version 2.0.0
+- Updates description of some sources (twitter -> X) and adds new sources (Bluesky)
+- Improve accessibility by removing CSS before/after text
+- Renders details panel on server, allowing phrases to be used for better internationalisation
+- Uses `JSON` module to output content
+- Uses `EPrints::DOI` module if available when getting DOI from eprint
+
+
+See https://details-page-api-docs.altmetric.com/data-endpoints-counts.html#response-object and
+ https://help.altmetric.com/support/solutions/folders/6000237990 for details of 'cited by' data.
+
+
+### Version 1.3.0 (not released as an EPM) ###
 - Adds user-agent in request made to Altmetric API
 - Displays default phrase (supports multiple languages) with link to Altmetric site before badge is displayed. See the [altmetric.xml phrase file](lib/lang/en/phrases/altmetric.xml#L9).
 - Above phrase is also used when the badge is displayed 

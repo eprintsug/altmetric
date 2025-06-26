@@ -20,9 +20,13 @@ $c->{altmetric}->{base_url} = "https://api.altmetric.com/v1";
 # Optional API key - see http://api.altmetric.com/index.html#keys
 # $c->{altmetric}->{api_key} = "";
 
+# These are the id_types we support. If the get_type_and_id function below will return other things
+# please add them to a config option:
+# $c->{altmetric}->{allowed_types} = [ 'doi', 'isbn' ];
+
 # Function to return id type and id.
 # For supported id_types, check the Altmetrics API reference
-# Currently they support doi, isbn, arXivID, PMID, ads and uri.
+# Currently their API supports: doi, isbn, arXivID, PMID, ads and uri.
 # If an Eprints has multiple usable identifiers, the first returned value will be used.
 $c->{altmetric}{get_type_and_id} = sub {
 	my( $eprint ) = @_;

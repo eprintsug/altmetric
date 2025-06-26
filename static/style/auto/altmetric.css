@@ -24,25 +24,45 @@ div.altmetric_row > span {
 	font-weight: bold;
 }
 
-/* Twitter */
+/* Twitter / X 
 div.altmetric_tweeters:before {
-	content: 'Tweeted by ';
+	content: 'Posted by ';
 }
+
+div.altmetric_tweeters:after {
+	content: ' X users';
+}
+*/
 
 div.altmetric_tweeters {
 	border-left: 16px solid #74CFED;
 }
 
-/* Blogs */
+/* Bluesky 
+div.altmetric_bluesky:before {
+	content: 'Mentioned by ';
+}
+
+div.altmetric_bluesky:after {
+	content: ' bluesky users';
+}
+*/
+
+div.altmetric_bluesky {
+	border-left: 16px solid #1185FE;
+}
+
+/* Blogs 
 div.altmetric_feeds:before {
 	content: 'Blogged by ';
 }
+*/
 
 div.altmetric_feeds {
 	border-left: 16px solid #FFD140;
 }
 
-/* Google+ */
+/* Google+ 
 div.altmetric_gplus:before {
 	content: 'Mentioned in ';
 }
@@ -50,12 +70,13 @@ div.altmetric_gplus:before {
 div.altmetric_gplus:after {
 	content: ' Google+ posts';
 }
+*/
 
 div.altmetric_gplus {
 	border-left: 16px solid #E065BB;
 }
 
-/* News outlet */
+/* News outlet
 div.altmetric_msm:before {
 	content: 'Picked up by ';
 }
@@ -63,12 +84,13 @@ div.altmetric_msm:before {
 div.altmetric_msm:after {
 	content: ' news outlets';
 }
+*/
 
 div.altmetric_msm {
 	border-left: 16px solid #FF0000;
 }
 
-/* Facebook */
+/* Facebook
 div.altmetric_fbwalls:before {
 	content: 'On ';
 }
@@ -76,25 +98,23 @@ div.altmetric_fbwalls:before {
 div.altmetric_fbwalls:after {
 	content: ' Facebook pages';
 }
+*/
 
 div.altmetric_fbwalls {
 	border-left: 16px solid #2445BD;
 }
 
-/* Reddit */
+/* Reddit
 div.altmetric_rdts:before {
 	content: 'Reddited by ';
 }
+*/
 
 div.altmetric_rdts {
 	border-left: 16px solid #D5E8F0;
 }
 
-/* Delicious */
-
-/* Forum */
-
-/* Videos */
+/* Videos 
 div.altmetric_videos:before {
 	content: 'On ';
 }
@@ -102,33 +122,37 @@ div.altmetric_videos:before {
 div.altmetric_videos:after {
 	content: ' videos';
 }
+*/
 
 div.altmetric_videos {
 	border-left: 16px solid #98C973;
 }
 
-/* Mendeley */
+/* Mendeley
 div.altmetric_mendeley:after {
 	content: ' readers on Mendeley';
 }
+*/
 
 div.altmetric_mendeley {
 	border-left: 16px solid #A60000;
 }
 
-/* Connotea */
+/* Connotea
 div.altmetric_connotea:after {
 	content: ' readers on Connotea';
 }
+*/
 
 div.altmetric_connotea {
 	border-left: 16px solid #FF4040;
 }
 
-/* CiteULike */
+/* CiteULike
 div.altmetric_citeulike:after {
 	content: ' readers on CiteULike ';
 }
+*/
 
 div.altmetric_citeulike {
 	border-left: 16px solid #BCD2EF;
