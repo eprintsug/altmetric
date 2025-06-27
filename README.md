@@ -3,22 +3,25 @@
 <img align="right" height="200" src="altmetric_example.png">
 Display altmetric badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/
 
-This plugin should work out-of-the-box. 
-
 There are some configuration options available, these are detailed in the z_altmetric.pl file.
 
-Originally developed by Sébastien François (https://github.com/sebastfr); updated by @drtjmb.
-Now maintained by *us* - eprintsug!
+## Colour palette ##
+The colours used on the Altmretic convey which sources contribute to the overall score.
+The colours used in the CSS are based on the following records which cover all current sources:
+- Most sources: https://www.altmetric.com/details/43673388
+- Clinical guideline: https://www.altmetric.com/details/40679400
+- Q&A: https://www.altmetric.com/details/1558157
+- Bluesky: https://www.altmetric.com/details/32695585
 
 ## Version history ##
 
-### Version 2.0.0
+### Version 2.0.0 ###
 - Updates description of some sources (twitter -> X) and adds new sources (Bluesky)
 - Improve accessibility by removing CSS before/after text
 - Renders details panel on server, allowing phrases to be used for better internationalisation
 - Uses `JSON` module to output content
 - Uses `EPrints::DOI` module if available when getting DOI from eprint
-
+- Aligned colours with Altmetric site
 
 See https://details-page-api-docs.altmetric.com/data-endpoints-counts.html#response-object and
  https://help.altmetric.com/support/solutions/folders/6000237990 for details of 'cited by' data.
