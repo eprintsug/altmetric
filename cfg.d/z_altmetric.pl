@@ -24,6 +24,12 @@ $c->{altmetric}->{base_url} = "https://api.altmetric.com/v1";
 # please add them to a config option:
 # $c->{altmetric}->{allowed_types} = [ 'doi', 'isbn' ];
 
+# If you want to change the order that the Altmetric sources are displayed in, or omit a source, 
+# you can define the following config option (and change the order or remove members of it):
+# $c->{altmetric}->{sources} = [qw / fbwalls feeds gplus msm rdts qna tweeters bluesky wikipedia policies guidelines patents videos / ];
+#
+# To change the text used to describe a source, please see the altmetric phrases file.
+
 # Function to return id type and id.
 # For supported id_types, check the Altmetrics API reference
 # Currently their API supports: doi, isbn, arXivID, PMID, ads and uri.
