@@ -1,5 +1,11 @@
 # Altmetric #
 
+**November 2025** The Altmetric API now _requires_ an API key. If an API key is not defined the plugin will
+now fall-back to the 'embed' method of adding a badge. This provides much of the same funcionality, although 
+does not support internationalisation that v2 of this extension does.
+
+Please see https://www.altmetric.com/solutions/free-tools/institutional-repository-badges/
+
 <img align="right" height="200" src="altmetric_example.png">
 Display altmetric badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/
 
@@ -16,6 +22,7 @@ The colours used in the CSS are based on the following records which cover all c
 ## Version history ##
 
 ### Version 2.0.0 ###
+- Updates to spport API key being mandatory. Falls back to embed if key isn't defined.
 - Updates description of some sources (twitter -> X) and adds new sources (Bluesky)
 - Improve accessibility by removing CSS before/after text
 - Renders details panel on server, allowing phrases to be used for better internationalisation

@@ -1,4 +1,10 @@
 ### Altmetric Summary Page Widget
+# November 2025
+# Altmetric are now requiring a key when calling the API.
+# This extension has been re-written to use API-based methods if a key is defined, but
+# fall back to the embedded badges if not.
+#
+# ----------
 #
 # For the Altmetric badges to work properly you need to contact support@altmetric.com 
 # and give them the domain your IR is hosted on.
@@ -6,6 +12,10 @@
 #   e.g. only the most recent tweets or likes may be shown.
 #
 ########################################################################################
+
+
+# API key - see http://api.altmetric.com/index.html#keys
+#$c->{altmetric}->{api_key} = "";
 
 # Enable the widget
 $c->{plugins}{"Screen::EPrint::Box::Altmetric"}{params}{disable} = 0;
@@ -17,8 +27,6 @@ $c->{plugins}->{"Screen::EPrint::Box::Altmetric"}->{appears}->{summary_right} = 
 # Altmetric API URL
 $c->{altmetric}->{base_url} = "https://api.altmetric.com/v1";
 
-# Optional API key - see http://api.altmetric.com/index.html#keys
-# $c->{altmetric}->{api_key} = "";
 
 # These are the id_types we support. If the get_type_and_id function below will return other things
 # please add them to a config option:
