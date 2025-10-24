@@ -6,8 +6,6 @@ use JSON;
 use strict;
 use warnings;
 
-use Data::Dumper;
-
 my $eprints = EPrints->new;
 my $repo = $eprints->current_repository;
 exit( 0 ) unless( defined $repo );
@@ -70,7 +68,12 @@ else
         # 420: rate limited
         # 502: API down for maintenance
         # 403: unauthorised call
-        if( $res->code == 404 )
+	if( $res->code == 403 )
+	{
+		return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) ); #TODO add message from Altmetric API too?
+		exit;
+	}
+        elsif( $res->code == 404 )
         {
 		return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
 		exit;
