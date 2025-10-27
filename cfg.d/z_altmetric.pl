@@ -24,8 +24,26 @@ $c->{plugins}{"Screen::EPrint::Box::Altmetric"}{params}{disable} = 0;
 $c->{plugins}->{"Screen::EPrint::Box::Altmetric"}->{appears}->{summary_bottom} = 25;
 $c->{plugins}->{"Screen::EPrint::Box::Altmetric"}->{appears}->{summary_right} = undef;
 
+# If you are not using an API key, these are the attributes that will be used for the badge display.
+# Please see: https://badge-docs.altmetric.com/customizations.html#data-attributes, or try the
+# 'Badge generator': https://badge-docs.altmetric.com/badge-playground.html and copy the attributes
+# into this hash.
+#
+# The plugin will handle the identifier attribute (data-doi, data-isbn, data-arxiv-id etc.)
+$c->{altmetric}->{badge_attributes} = {
+	'data-badge-type'    => 'donut',
+	'data-badge-details' => 'right',
+	'data-condensed'     => 'true'.
+};
+
+
 # Altmetric API URL
 $c->{altmetric}->{base_url} = "https://api.altmetric.com/v1";
+
+# Altmetric Embed URL (only used when API key is not set)
+# There is a default value for this in the rendered box. If a different URL was needed
+# this can be defined here:
+# $c->{altmetric}->{embed_url} = "https://embed.altmetric.com/assets/embed.js";
 
 
 # These are the id_types we support. If the get_type_and_id function below will return other things
