@@ -53,8 +53,7 @@ EOJ
 	{
 		my $div = $session->make_element( 'div',
 			class => 'altmetric-embed',
-			"data-altmetric-id-type" => $type,
-			"data-altmetric-id" => $id,
+			"data-$type" => $id,
 			( defined $session->config( "altmetric", "badge_attributes" ) ? %{$session->config( "altmetric", "badge_attributes" )} : undef ),
 		);
 		$frag->appendChild( $div );
