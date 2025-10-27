@@ -35,7 +35,8 @@ sub render
 
 	if( defined $session->config( "altmetric", "api_key" ) )
 	{
-		my $div = $frag->appendChild( $session->make_element( 'div', class => 'altmetric_summary_page', "data-altmetric-id-type" => $type, "data-altmetric-id" => $id ) );
+		my $t = EPrints::Utils::generate_token( 8 );
+		my $div = $frag->appendChild( $session->make_element( 'div', id => "altmetric_summary_page_$t", class => 'altmetric_summary_page', "data-altmetric-id-type" => $type, "data-altmetric-id" => $id ) );
 
 		my $phr = "default_content";
 		if( $session->get_lang->has_phrase( $self->html_phrase_id( $phr ) ) )
@@ -44,7 +45,7 @@ sub render
 		}
 
 		$frag->appendChild( $session->make_javascript( <<EOJ ) );
-new EP_Altmetric_Badge( 'altmetric_summary_page' );
+new EP_Altmetric_Badge( 'altmetric_summary_page_$t' );
 EOJ
 
 	}
