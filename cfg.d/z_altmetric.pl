@@ -33,7 +33,7 @@ $c->{plugins}->{"Screen::EPrint::Box::Altmetric"}->{appears}->{summary_right} = 
 $c->{altmetric}->{badge_attributes} = {
 	'data-badge-type'    => 'donut',
 	'data-badge-details' => 'right',
-	'data-condensed'     => 'true'.
+	'data-condensed'     => 'true',
 };
 
 
