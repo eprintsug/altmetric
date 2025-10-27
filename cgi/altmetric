@@ -13,13 +13,16 @@ exit( 0 ) unless( defined $repo );
 my $alt_type = $repo->param( 'id_type' ) or exit;
 my $alt_id = $repo->param( 'id' ) or exit;
 
+# API key now mandatory. 
+my $api_key = $repo->config( 'altmetric', 'api_key' ) or exit;
+
 # Full list if types: citations id doi pmid arxiv ads uri isbn
-# We will stick to doi and isbn here and insist
 
 my $allowed_id_types = $repo->config( "altmetric", "allowed_types" );
 # fall back to default if needed.
 $allowed_id_types = [qw/doi isbn/] if !defined $allowed_id_types;
 
+# Details to be displayed if they have any score.
 my $sources = $repo->config( "altmetric", "sources" );
 $sources = [qw / fbwalls feeds gplus msm rdts qna tweeters bluesky wikipedia policies guidelines patents videos / ] if ! defined $sources;
 
@@ -47,7 +50,6 @@ if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
 
 my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/$alt_type/$alt_id" );
 
-my $api_key = $repo->config( 'altmetric', 'api_key' );
 
 if( EPrints::Utils::is_set( $api_key ) )
 {
@@ -68,9 +70,9 @@ else
         # 420: rate limited
         # 502: API down for maintenance
         # 403: unauthorised call
-	if( $res->code == 403 )
+	if( $res->code == 401 )
 	{
-		return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) ); #TODO add message from Altmetric API too?
+		return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) . "\n" . $res->content );
 		exit;
 	}
         elsif( $res->code == 404 )
@@ -78,6 +80,11 @@ else
 		return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
 		exit;
         }
+	elsif( $res->code == 420 )
+	{
+		return_error( $repo->phrase( 'lib/altmetric:rate_limited' ) );
+		exit;
+	}
         else
         {
 		# We may be here because of an old version of LWP that is causing a security exception from the altmetric api
