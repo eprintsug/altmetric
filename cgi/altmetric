@@ -13,8 +13,6 @@ exit( 0 ) unless( defined $repo );
 my $alt_type = $repo->param( 'id_type' ) or exit;
 my $alt_id = $repo->param( 'id' ) or exit;
 
-# API key now mandatory. 
-my $api_key = $repo->config( 'altmetric', 'api_key' ) or exit;
 
 # Full list if types: citations id doi pmid arxiv ads uri isbn
 
@@ -34,6 +32,14 @@ binmode( STDOUT, ":utf8" );
 # note we always reply to the Ajax request with 200 OK
 EPrints::Apache::AnApache::send_status_line( $repo->get_request, 200 );
 $repo->send_http_header( "content_type"=> "application/json; charset=utf-8" );
+
+# API key now mandatory.
+my $api_key = $repo->config( 'altmetric', 'api_key' );
+if( !defined $api_key )
+{
+	return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) );
+	exit;
+}
 
 unless ( grep {$_ eq $alt_type} @{$allowed_id_types} ) {
 	return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
