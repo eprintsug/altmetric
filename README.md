@@ -1,10 +1,21 @@
 # Altmetric #
 
+Please see https://www.altmetric.com/solutions/free-tools/institutional-repository-badges/
+
 **November 2025** The Altmetric API now _requires_ an API key. If an API key is not defined the plugin will
 now fall-back to the 'embed' method of adding a badge. This provides much of the same funcionality, although 
-does not support internationalisation that v2 of this extension does.
+does not support internationalisation that v2.0.0+ of this extension does.
 
-Please see https://www.altmetric.com/solutions/free-tools/institutional-repository-badges/
+If no API key is configured the badges displayed will use the attributes defined in the `cfg.d/z_altmetric.pl` file.
+By default these are:
+
+```perl
+$c->{altmetric}->{badge_attributes} = {
+        'data-badge-type'    => 'donut',
+        'data-badge-details' => 'right',
+        'data-condensed'     => 'true',
+};
+```
 
 <img align="right" height="200" src="altmetric_example.png">
 Display altmetric badges on summary pages. Visit the altmetric web-site for more information: http://www.altmetric.com/
