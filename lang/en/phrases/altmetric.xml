@@ -3,8 +3,8 @@
 <epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
 
 <epp:phrase id="lib/altmetric:not_found">No Altmetrics are currently available for this publication.</epp:phrase>
-<epp:phrase id="lib/altmetric:auth_reqd">The Altmetrics API now requires a key. Please refer to the EPrints/Altmetric documenation.</epp:phrase>
-<epp:phrase id="lib/altmetric:forbidden">No access to the Altmetrics API.</epp:phrase>
+<epp:phrase id="lib/altmetric:auth_reqd">The Altmetric API now requires a key. Please refer to the EPrints/Altmetric documentation.</epp:phrase>
+<epp:phrase id="lib/altmetric:forbidden">No access to the Altmetric API.</epp:phrase>
 <epp:phrase id="lib/altmetric:rate_limited">Too many requests - rate limited.</epp:phrase>
 <epp:phrase id="lib/altmetric:unknown_error">An error has occurred whilst retrieving data from Altmetric.</epp:phrase>
 
