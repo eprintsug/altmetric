@@ -78,9 +78,15 @@ else
         # 403: unauthorised call
 	if( $res->code == 401 )
 	{
+		# This could either be a 'need to provide a key' or 'API key was wrong'
 		return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) . "\n" . $res->content );
 		exit;
 	}
+        elsif( $res->code == 403 )
+        {
+		return_error( $repo->phrase( 'lib/altmetric:forbidden' ) );
+		exit;
+        }
         elsif( $res->code == 404 )
         {
 		return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
