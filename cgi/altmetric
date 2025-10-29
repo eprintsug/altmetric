@@ -72,10 +72,12 @@ if( $res->is_success )
 }
 else
 {
-        # other error codes:
-        # 420: rate limited
+        # other error codes (from: https://details-page-api-docs.altmetric.com/shared/status-codes.html):
+	# 401: Auth reqd.
+	# 403: Forbidden
+	# 404: Not found
+        # 429: rate limited
         # 502: API down for maintenance
-        # 403: unauthorised call
 	if( $res->code == 401 )
 	{
 		# This could either be a 'need to provide a key' or 'API key was wrong'
@@ -92,9 +94,14 @@ else
 		return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
 		exit;
         }
-	elsif( $res->code == 420 )
+	elsif( $res->code == 429 )
 	{
 		return_error( $repo->phrase( 'lib/altmetric:rate_limited' ) );
+		exit;
+	}
+	elsif( $res->code == 502 )
+	{
+		return_error( $repo->phrase( 'lib/altmetric:down_for_maintenance' ) );
 		exit;
 	}
         else
@@ -116,8 +123,8 @@ else
 			}
 		}
 	}
-
-	$c = `curl -k "$alt_url"`;
+	# Opts: s = silent; S = but still report errors; k = insecure
+	$c = `curl -sSk "$alt_url"`;
 }
 
 my $json = eval { decode_json( $c ) };
