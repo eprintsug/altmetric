@@ -154,8 +154,11 @@ foreach my $s ( @$sources )
 {
 	if( defined $json->{"cited_by_${s}_count"} && $repo->get_lang->has_phrase( "lib/altmetric:cited_by_${s}", $repo ) )
 	{
+		my $phr_id = "lib/altmetric:cited_by_${s}";
+		$phr_id .= "_plural" if ( $json->{"cited_by_${s}_count"} > 1 && $repo->get_lang->has_phrase( "lib/altmetric:cited_by_${s}_plural", $repo ) );
+
 		my $r = $repo->make_element( "div", class => "altmetric_row altmetric_${s}" );
-		$r->appendChild( $repo->html_phrase( "lib/altmetric:cited_by_${s}", count => $repo->make_text( $json->{"cited_by_${s}_count"} ) ) );
+		$r->appendChild( $repo->html_phrase( $phr_id, count => $repo->make_text( $json->{"cited_by_${s}_count"} ) ) );
 		$d->appendChild( $r );
 	}
 }
@@ -168,8 +171,11 @@ if( defined $json->{"readers"} )
 	{
 		if( defined $json->{"readers"}->{$reader} && $json->{"readers"}->{$reader} > 0 && $repo->get_lang->has_phrase( "lib/altmetric:readers_${reader}", $repo ) )
 		{
+			my $phr_id = "lib/altmetric:readers_${reader}";
+			$phr_id .= "_plural" if ( $json->{"readers"}->{$reader} > 1 && $repo->get_lang->has_phrase( "lib/altmetric:readers_${reader}_plural", $repo ) );
+
 			my $r = $repo->make_element( "div", class => "altmetric_row altmetric_${reader}" );
-			$r->appendChild( $repo->html_phrase( "lib/altmetric:readers_${reader}", count => $repo->make_text( $json->{"readers"}->{$reader} ) ) );
+			$r->appendChild( $repo->html_phrase( $phr_id, count => $repo->make_text( $json->{"readers"}->{$reader} ) ) );
 			if( !$had_reader )
 			{
 				$d->appendChild( $repo->make_element( "br" ) );

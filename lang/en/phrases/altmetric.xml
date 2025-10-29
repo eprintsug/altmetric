@@ -15,21 +15,54 @@
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:title">Altmetric</epp:phrase>
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:default_content"><p><epc:pin name="default_link">View Altmetric information about this item</epc:pin>.</p></epp:phrase>
 
-<!-- https://details-page-api-docs.altmetric.com/data-endpoints-counts.html#response-object -->
-<epp:phrase id="lib/altmetric:cited_by_bluesky"><span><epc:pin name="count" /></span> bluesky users</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_fbwalls"><span><epc:pin name="count" /></span> Facebook pages</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_feeds"><span><epc:pin name="count" /></span> blogs</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_gplus"><span><epc:pin name="count" /></span> Google+ users</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_guidelines"><span><epc:pin name="count" /></span> guidelines</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_msm"><span><epc:pin name="count" /></span> news outlets</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_patents"><span><epc:pin name="count" /></span> patents</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_policies"><span><epc:pin name="count" /></span> policies</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_qna"><span><epc:pin name="count" /></span> Q&amp;A pages</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_rdts"><span><epc:pin name="count" /></span> Redditors</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_tweeters"><span><epc:pin name="count" /></span> X users</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_videos"><span><epc:pin name="count" /></span> YouTube creators</epp:phrase>
-<epp:phrase id="lib/altmetric:cited_by_wikipedia"><span><epc:pin name="count" /></span> Wikipedia pages</epp:phrase>
+<!-- Each phrase below has a singular (e.g. 'user') and plural (e.g. 'users') variant. In English, for most cases, 
+	this can be achieved by adding an 's' on at the end, so the singular phrase is used (with the pin passed-through).
+	One exception below is 'policy' vs. 'policies'.
 
-<epp:phrase id="lib/altmetric:readers_mendeley"><span><epc:pin name="count" /></span> Mendeley users</epp:phrase>
+	See https://details-page-api-docs.altmetric.com/data-endpoints-counts.html#response-object for details of the
+	data available in the API response.
+-->
+<epp:phrase id="lib/altmetric:cited_by_bluesky"><span><epc:pin name="count" /></span> bluesky user</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_bluesky_plural"><epc:phrase ref="lib/altmetric:cited_by_bluesky"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_fbwalls"><span><epc:pin name="count" /></span> Facebook page</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_fbwalls_plural"><epc:phrase ref="lib/altmetric:cited_by_fbwalls"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_feeds"><span><epc:pin name="count" /></span> blog</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_feeds_plural"><epc:phrase ref="lib/altmetric:cited_by_feeds"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_gplus"><span><epc:pin name="count" /></span> Google+ user</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_gplus_plural"><epc:phrase ref="lib/altmetric:cited_by_gplus"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_guidelines"><span><epc:pin name="count" /></span> guideline</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_guidelines_plural"><epc:phrase ref="lib/altmetric:cited_by_guidelines"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_msm"><span><epc:pin name="count" /></span> news outlet</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_msm_plural"><epc:phrase ref="lib/altmetric:cited_by_msm"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_patents"><span><epc:pin name="count" /></span> patent</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_patents_plural"><epc:phrase ref="lib/altmetric:cited_by_patents"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_policies"><span><epc:pin name="count" /></span> policy</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_policies_plural"><span><epc:pin name="count" /></span> policies</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_qna"><span><epc:pin name="count" /></span> Q&amp;A page</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_qna_plural"><epc:phrase ref="lib/altmetric:cited_by_qna"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_rdts"><span><epc:pin name="count" /></span> Redditor</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_rdts_plural"><epc:phrase ref="lib/altmetric:cited_by_rdts"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_tweeters"><span><epc:pin name="count" /></span> X user</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_tweeters_plural"><epc:phrase ref="lib/altmetric:cited_by_tweeters"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_videos"><span><epc:pin name="count" /></span> YouTube creator</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_videos_plural"><epc:phrase ref="lib/altmetric:cited_by_videos"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<epp:phrase id="lib/altmetric:cited_by_wikipedia"><span><epc:pin name="count" /></span> Wikipedia page</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_wikipedia_plural"><epc:phrase ref="lib/altmetric:cited_by_wikipedia"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
+
+<!-- Readers -->
+<epp:phrase id="lib/altmetric:readers_mendeley"><span><epc:pin name="count" /></span> Mendeley user</epp:phrase>
+<epp:phrase id="lib/altmetric:readers_mendeley_plural"><epc:phrase ref="lib/altmetric:readers_mendeley"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
 
 </epp:phrases>
