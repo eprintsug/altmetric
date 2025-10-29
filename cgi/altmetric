@@ -1,7 +1,10 @@
 use LWP::UserAgent;
 use EPrints;
 
+use JSON;
+
 use strict;
+use warnings;
 
 my $eprints = EPrints->new;
 my $repo = $eprints->current_repository;
@@ -10,17 +13,36 @@ exit( 0 ) unless( defined $repo );
 my $alt_type = $repo->param( 'id_type' ) or exit;
 my $alt_id = $repo->param( 'id' ) or exit;
 
+
 # Full list if types: citations id doi pmid arxiv ads uri isbn
-# We will stick to doi and isbn here and insist
 
 my $allowed_id_types = $repo->config( "altmetric", "allowed_types" );
 # fall back to default if needed.
 $allowed_id_types = [qw/doi isbn/] if !defined $allowed_id_types;
+
+# Details to be displayed if they have any score.
+my $sources = $repo->config( "altmetric", "sources" );
+$sources = [qw / fbwalls feeds gplus msm rdts qna tweeters bluesky wikipedia policies guidelines patents videos / ] if ! defined $sources;
+
 my $errmsg;
+my $out = {};
+
+binmode( STDOUT, ":utf8" );
+
+# note we always reply to the Ajax request with 200 OK
+EPrints::Apache::AnApache::send_status_line( $repo->get_request, 200 );
+$repo->send_http_header( "content_type"=> "application/json; charset=utf-8" );
+
+# API key now mandatory.
+my $api_key = $repo->config( 'altmetric', 'api_key' );
+if( !defined $api_key )
+{
+	return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) );
+	exit;
+}
 
 unless ( grep {$_ eq $alt_type} @{$allowed_id_types} ) {
-	$errmsg = $repo->phrase( 'lib/altmetric:not_found' );
-	print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
+	return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
 	exit;
 }
 
@@ -29,65 +51,159 @@ $ua->agent( 'eprints/' . EPrints->human_version );
 
 if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
 {
-	$ua->proxy( 'http', $ENV{HTTP_proxy} )
+        $ua->proxy( 'http', $ENV{HTTP_proxy} )
 }
 
 my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/$alt_type/$alt_id" );
 
-my $api_key = $repo->config( 'altmetric', 'api_key' );
 
 if( EPrints::Utils::is_set( $api_key ) )
 {
-	$alt_url->query_form( key => $api_key );
+        $alt_url->query_form( key => $api_key );
 }
 
 my $req = HTTP::Request->new( GET => $alt_url );
-
 my $res = $ua->request($req);
-
-binmode( STDOUT, ":utf8" );
-
-# note we always reply to the Ajax request with 200 OK
-EPrints::Apache::AnApache::send_status_line( $repo->get_request, 200 );
-$repo->send_http_header( "content_type"=> "application/json; charset=utf-8" );
+my $c;
 
 if( $res->is_success )
 {
-	print STDOUT $res->content;
+	$c = $res->content;
 }
 else
 {
-	# other error codes:
-	# 420: rate limited
-	# 502: API down for maintenance
-	# 403: unauthorised call
-	if( $res->code == 404 )
+        # other error codes (from: https://details-page-api-docs.altmetric.com/shared/status-codes.html):
+	# 401: Auth reqd.
+	# 403: Forbidden
+	# 404: Not found
+        # 429: rate limited
+        # 502: API down for maintenance
+	if( $res->code == 401 )
 	{
-		$errmsg = $repo->phrase( 'lib/altmetric:not_found' );
+		# This could either be a 'need to provide a key' or 'API key was wrong'
+		return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) . "\n" . $res->content );
+		exit;
 	}
-	else
+        elsif( $res->code == 403 )
+        {
+		return_error( $repo->phrase( 'lib/altmetric:forbidden' ) );
+		exit;
+        }
+        elsif( $res->code == 404 )
+        {
+		return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
+		exit;
+        }
+	elsif( $res->code == 429 )
 	{
+		return_error( $repo->phrase( 'lib/altmetric:rate_limited' ) );
+		exit;
+	}
+	elsif( $res->code == 502 )
+	{
+		return_error( $repo->phrase( 'lib/altmetric:down_for_maintenance' ) );
+		exit;
+	}
+        else
+        {
 		# We may be here because of an old version of LWP that is causing a security exception from the altmetric api
 		# In case that is the case, we will (re) sanitize the params and use curl
-		if ($alt_type eq 'doi' ){
-			unless ( $alt_id =~ /10\.(\d+\.*)+[\/](([^\s\.])+\.*)+/  ) {
-				$errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
-				print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
-				exit;
-			}
-		}
 
-		if ($alt_type eq 'isbn' ){
-			unless ( $alt_id =~ /(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)/ ) {
-				$errmsg = $repo->phrase( 'lib/altmetric:unknown_error' );
-				print STDOUT '{ "error": "1", "message": "'.$errmsg.'" }';
+		if( $alt_type eq 'doi' ){
+			unless ( $alt_id =~ /10\.(\d+\.*)+[\/](([^\s\.])+\.*)+/  ) {
+				return_error( $repo->phrase( 'lib/altmetric:bad_id' ) );
 				exit;
 			}
 		}
-		my $response = `curl -k "$alt_url"`;
-		print STDOUT $response;
-		exit;
+		elsif( $alt_type eq 'isbn' )
+		{
+			unless ( $alt_id =~ /(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)/ ) {
+				return_error( $repo->phrase( 'lib/altmetric:bad_id' ) );
+				exit;
+			}
+		}
+	}
+	# Opts: s = silent; S = but still report errors; k = insecure
+	$c = `curl -sSk "$alt_url"`;
+}
+
+my $json = eval { decode_json( $c ) };
+if( $@ )
+{
+	# Don't send the error message to the browser - but log it
+        print STDERR "Altmetric: broken JSON from API ($alt_type --> $alt_id)\n", $@;
+
+	return_error( $repo->phrase( 'lib/altmetric:json_decode_error' ) );
+	exit;
+}
+
+# This will be converted to a json string
+my $f = $repo->make_doc_fragment();
+
+if( defined $json->{images}->{medium} )
+{
+	# the altmetric score shown on the badge is rounded up. Ceil here matches that score.
+	my $score = defined $json->{score} ? "Altmetric score: ".POSIX::ceil($json->{score}) : ''; 
+	my $img = $repo->make_element( "img", src => $json->{images}->{medium}, class => 'altmetric_donut', alt => $score );
+	$f->appendChild( $img );
+}
+
+my $d = $repo->make_element( "div", class => "altmetric_details_panel" );
+$f->appendChild( $d );
+foreach my $s ( @$sources )
+{
+	if( defined $json->{"cited_by_${s}_count"} && $repo->get_lang->has_phrase( "lib/altmetric:cited_by_${s}", $repo ) )
+	{
+		my $phr_id = "lib/altmetric:cited_by_${s}";
+		$phr_id .= "_plural" if ( $json->{"cited_by_${s}_count"} > 1 && $repo->get_lang->has_phrase( "lib/altmetric:cited_by_${s}_plural", $repo ) );
+
+		my $r = $repo->make_element( "div", class => "altmetric_row altmetric_${s}" );
+		$r->appendChild( $repo->html_phrase( $phr_id, count => $repo->make_text( $json->{"cited_by_${s}_count"} ) ) );
+		$d->appendChild( $r );
 	}
 }
 
+if( defined $json->{"readers"} )
+{
+	my $had_reader = 0;
+
+	foreach my $reader ( qw / mendeley citeulike / )
+	{
+		if( defined $json->{"readers"}->{$reader} && $json->{"readers"}->{$reader} > 0 && $repo->get_lang->has_phrase( "lib/altmetric:readers_${reader}", $repo ) )
+		{
+			my $phr_id = "lib/altmetric:readers_${reader}";
+			$phr_id .= "_plural" if ( $json->{"readers"}->{$reader} > 1 && $repo->get_lang->has_phrase( "lib/altmetric:readers_${reader}_plural", $repo ) );
+
+			my $r = $repo->make_element( "div", class => "altmetric_row altmetric_${reader}" );
+			$r->appendChild( $repo->html_phrase( $phr_id, count => $repo->make_text( $json->{"readers"}->{$reader} ) ) );
+			if( !$had_reader )
+			{
+				$d->appendChild( $repo->make_element( "br" ) );
+				$had_reader = 1;
+			}
+			$d->appendChild( $r );
+		}
+	}
+}
+
+# to_string used because it removes unnecessary namespaces
+$out->{html} = EPrints::XML::to_string( $f, "utf-8", 1 );
+EPrints::XML::dispose( $f );
+
+# This is used to provide a link to more details
+$out->{details_url} = $json->{'details_url'};
+
+print STDOUT encode_json( $out );
 exit;
+
+sub return_error
+{
+	my( $err_msg ) = @_;
+
+	my $out = {};
+	$out->{error} = 1;
+	$out->{message} = $err_msg;
+
+	print STDOUT encode_json( $out );
+	
+}
