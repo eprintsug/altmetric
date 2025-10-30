@@ -51,7 +51,7 @@ $ua->agent( 'eprints/' . EPrints->human_version );
 
 if( EPrints::Utils::is_set( $ENV{HTTP_proxy} ) )
 {
-        $ua->proxy( 'http', $ENV{HTTP_proxy} )
+	$ua->proxy( 'http', $ENV{HTTP_proxy} )
 }
 
 my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/$alt_type/$alt_id" );
@@ -59,7 +59,7 @@ my $alt_url = URI->new( $repo->config( 'altmetric', 'base_url' )."/$alt_type/$al
 
 if( EPrints::Utils::is_set( $api_key ) )
 {
-        $alt_url->query_form( key => $api_key );
+	$alt_url->query_form( key => $api_key );
 }
 
 my $req = HTTP::Request->new( GET => $alt_url );
@@ -72,28 +72,28 @@ if( $res->is_success )
 }
 else
 {
-        # other error codes (from: https://details-page-api-docs.altmetric.com/shared/status-codes.html):
+	# other error codes (from: https://details-page-api-docs.altmetric.com/shared/status-codes.html):
 	# 401: Auth reqd.
 	# 403: Forbidden
 	# 404: Not found
-        # 429: rate limited
-        # 502: API down for maintenance
+	# 429: rate limited
+	# 502: API down for maintenance
 	if( $res->code == 401 )
 	{
 		# This could either be a 'need to provide a key' or 'API key was wrong'
 		return_error( $repo->phrase( 'lib/altmetric:auth_reqd' ) . "\n" . $res->content );
 		exit;
 	}
-        elsif( $res->code == 403 )
-        {
+	elsif( $res->code == 403 )
+	{
 		return_error( $repo->phrase( 'lib/altmetric:forbidden' ) );
 		exit;
-        }
-        elsif( $res->code == 404 )
-        {
+	}
+	elsif( $res->code == 404 )
+	{
 		return_error( $repo->phrase( 'lib/altmetric:not_found' ) );
 		exit;
-        }
+	}
 	elsif( $res->code == 429 )
 	{
 		return_error( $repo->phrase( 'lib/altmetric:rate_limited' ) );
@@ -104,8 +104,8 @@ else
 		return_error( $repo->phrase( 'lib/altmetric:down_for_maintenance' ) );
 		exit;
 	}
-        else
-        {
+	else
+	{
 		# We may be here because of an old version of LWP that is causing a security exception from the altmetric api
 		# In case that is the case, we will (re) sanitize the params and use curl
 
@@ -131,7 +131,7 @@ my $json = eval { decode_json( $c ) };
 if( $@ )
 {
 	# Don't send the error message to the browser - but log it
-        print STDERR "Altmetric: broken JSON from API ($alt_type --> $alt_id)\n", $@;
+	print STDERR "Altmetric: broken JSON from API ($alt_type --> $alt_id)\n", $@;
 
 	return_error( $repo->phrase( 'lib/altmetric:json_decode_error' ) );
 	exit;
@@ -143,7 +143,7 @@ my $f = $repo->make_doc_fragment();
 if( defined $json->{images}->{medium} )
 {
 	# the altmetric score shown on the badge is rounded up. Ceil here matches that score.
-	my $score = defined $json->{score} ? "Altmetric score: ".POSIX::ceil($json->{score}) : ''; 
+	my $score = defined $json->{score} ? "Altmetric score: ".POSIX::ceil($json->{score}) : '';
 	my $img = $repo->make_element( "img", src => $json->{images}->{medium}, class => 'altmetric_donut', alt => $score );
 	$f->appendChild( $img );
 }
