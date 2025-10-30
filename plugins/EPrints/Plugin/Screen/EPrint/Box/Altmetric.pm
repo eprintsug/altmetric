@@ -69,7 +69,7 @@ sub render_embed_script
 {
 	my( $self ) = @_;
 
-        my $session = $self->{session};
+	my $session = $self->{session};
 
 	my $script = $session->make_element( "script",
 		src =>( defined $session->config( "altmetric", "embed_url" )
@@ -81,7 +81,7 @@ sub render_embed_script
 	return $script;
 }
 
-# These methods may be useful if the badge should be 
+# These methods may be useful if the badge should be
 
 package EPrints::Script::Compiled;
 

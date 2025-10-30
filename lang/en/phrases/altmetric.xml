@@ -15,7 +15,7 @@
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:title">Altmetric</epp:phrase>
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:default_content"><p><epc:pin name="default_link">View Altmetric information about this item</epc:pin>.</p></epp:phrase>
 
-<!-- Each phrase below has a singular (e.g. 'user') and plural (e.g. 'users') variant. In English, for most cases, 
+<!-- Each phrase below has a singular (e.g. 'user') and plural (e.g. 'users') variant. In English, for most cases,
 	this can be achieved by adding an 's' on at the end, so the singular phrase is used (with the pin passed-through).
 	One exception below is 'policy' vs. 'policies'.
 
