@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <epm xmlns='http://eprints.org/ep2/data/2.0' id='http://localhost:8080/id/epm/altmetric'>
   <epmid>altmetric</epmid>
-  <uri>http://192.168.23.142/id/epm/altmetric</uri>
+  <uri>http://eprints.test/id/epm/altmetric</uri>
   <documents>
     <document>
       <files>
@@ -21,6 +21,30 @@
           <hash_type>MD5</hash_type>
           <filesize>1333</filesize>
         </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Screen/EPMC/Altmetric.pm</filename>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/style/auto/altmetric.css</filename>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/javascript/auto/99_altmetric.js</filename>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/images/epm/altmetric.png</filename>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>lang/en/phrases/altmetric.xml</filename>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
+        </file>
       </files>
       <mime_type>text/plain</mime_type>
       <format>text</format>
@@ -28,7 +52,7 @@
       <content>install</content>
     </document>
   </documents>
-  <version>1.3.0</version>
+  <version>2.0.0</version>
   <controller>EPMC::Altmetric</controller>
   <creators>
     <item>
