@@ -33,9 +33,19 @@ sub render
 	# If an API key has been defined, use the API (via local cgi) method to render the data.
 	# If there is no API key, fall back to the Altmetric embed javascript method.
 
-	if( defined $session->config( "altmetric", "api_key" ) )
+	if( EPrints::Utils::is_set( $session->config( "altmetric", "api_key" ) ) )
 	{
-		my $t = EPrints::Utils::generate_token( 8 );
+		# Generate a unique ID for the div, in case this is used on a page that could disaply multiple badges e.g. search results or browse pages
+		my $t = '';
+		if( UNIVERSAL::can( 'EPrints::Utils', 'generate_token' ) )
+		{
+			$t = EPrints::Utils::generate_token( 8 );
+		}
+		else
+		{
+			$t = int( 10000000 + rand(99999999 - 10000000) ); # rand is sufficient, we're just making unique container id attributes
+		}
+
 		my $div = $frag->appendChild( $session->make_element( 'div', id => "altmetric_summary_page_$t", class => 'altmetric_summary_page', "data-altmetric-id-type" => $type, "data-altmetric-id" => $id ) );
 
 		my $phr = "default_content";
@@ -69,7 +79,7 @@ sub render_embed_script
 {
 	my( $self ) = @_;
 
-        my $session = $self->{session};
+	my $session = $self->{session};
 
 	my $script = $session->make_element( "script",
 		src =>( defined $session->config( "altmetric", "embed_url" )
@@ -81,7 +91,7 @@ sub render_embed_script
 	return $script;
 }
 
-# These methods may be useful if the badge should be 
+# These methods may be useful if the badge should be
 
 package EPrints::Script::Compiled;
 
@@ -120,8 +130,6 @@ sub run_altmetric_embed_script
 {
 	my( $self, $state ) = @_;
 
-	#my $box = $state->{session}->plugin( "Screen::EPrint::Box::Altmetric", processor => $processor );
-	#my $box = $state->{session}->plugin( "Screen::EPrint::Box::Altmetric", session => $state->{session} );
 	my $box = $state->{session}->plugin( "Screen::EPrint::Box::Altmetric" );
 
 	if( !defined $box )
