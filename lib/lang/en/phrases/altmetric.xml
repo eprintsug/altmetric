@@ -15,14 +15,14 @@
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:title">Altmetric</epp:phrase>
 <epp:phrase id="Plugin/Screen/EPrint/Box/Altmetric:default_content"><p><epc:pin name="default_link">View Altmetric information about this item</epc:pin>.</p></epp:phrase>
 
-<!-- Each phrase below has a singular (e.g. 'user') and plural (e.g. 'users') variant. In English, for most cases, 
+<!-- Each phrase below has a singular (e.g. 'user') and plural (e.g. 'users') variant. In English, for most cases,
 	this can be achieved by adding an 's' on at the end, so the singular phrase is used (with the pin passed-through).
 	One exception below is 'policy' vs. 'policies'.
 
 	See https://details-page-api-docs.altmetric.com/data-endpoints-counts.html#response-object for details of the
 	data available in the API response.
 -->
-<epp:phrase id="lib/altmetric:cited_by_bluesky"><span><epc:pin name="count" /></span> bluesky user</epp:phrase>
+<epp:phrase id="lib/altmetric:cited_by_bluesky"><span><epc:pin name="count" /></span> Bluesky user</epp:phrase>
 <epp:phrase id="lib/altmetric:cited_by_bluesky_plural"><epc:phrase ref="lib/altmetric:cited_by_bluesky"><epc:param name="count"><epc:pin name="count" /></epc:param></epc:phrase>s</epp:phrase>
 
 <epp:phrase id="lib/altmetric:cited_by_fbwalls"><span><epc:pin name="count" /></span> Facebook page</epp:phrase>
