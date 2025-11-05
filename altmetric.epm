@@ -12,7 +12,7 @@
           <hash>98e2c3063d12f67062d27813fad97db9</hash>
           <hash_type>MD5</hash_type>
           <filesize>3756</filesize>
-        <data encoding="base64">IyMjIEFsdG1ldHJpYyBTdW1tYXJ5IFBhZ2UgV2lkZ2V0CiMgTm92ZW1iZXIgMjAyNQojIEFsdG1l
+          <data encoding="base64">IyMjIEFsdG1ldHJpYyBTdW1tYXJ5IFBhZ2UgV2lkZ2V0CiMgTm92ZW1iZXIgMjAyNQojIEFsdG1l
 dHJpYyBhcmUgbm93IHJlcXVpcmluZyBhIGtleSB3aGVuIGNhbGxpbmcgdGhlIEFQSS4KIyBUaGlz
 IGV4dGVuc2lvbiBoYXMgYmVlbiByZS13cml0dGVuIHRvIHVzZSBBUEktYmFzZWQgbWV0aG9kcyBp
 ZiBhIGtleSBpcyBkZWZpbmVkLCBidXQKIyBmYWxsIGJhY2sgdG8gdGhlIGVtYmVkZGVkIGJhZGdl
@@ -78,7 +78,8 @@ KSBpZiAkZG9pOwoJCX0KCQkjIG9yIGEgcnVkaW1lbnRhcnkgY2hlY2sgaWYgbmVjZXNzYXJ5CQoJ
 CWVsc2lmKCAkZXByaW50LT52YWx1ZSggImlkX251bWJlciIgKSA9fiAvXGIxMC4vICl7CgkJCXJl
 dHVybiggImRvaSIsICRlcHJpbnQtPnZhbHVlKCAiaWRfbnVtYmVyIiApICk7CgkJfQoJfQoKCSNv
 dGhlciBmaWVsZHMgY291bGQgYmUgY2hlY2tlZCBhbmQgcmV0dXJuZWQgaGVyZS4KfTsK
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>epm/altmetric/cgi/altmetric</filename>
@@ -86,7 +87,7 @@ dGhlciBmaWVsZHMgY291bGQgYmUgY2hlY2tlZCBhbmQgcmV0dXJuZWQgaGVyZS4KfTsK
           <hash>9749fe81e550c9a96e3d8b4fdb0be378</hash>
           <hash_type>MD5</hash_type>
           <filesize>5926</filesize>
-        <data encoding="base64">dXNlIExXUDo6VXNlckFnZW50Owp1c2UgRVByaW50czsKCnVzZSBKU09OOwoKdXNlIHN0cmljdDsK
+          <data encoding="base64">dXNlIExXUDo6VXNlckFnZW50Owp1c2UgRVByaW50czsKCnVzZSBKU09OOwoKdXNlIHN0cmljdDsK
 dXNlIHdhcm5pbmdzOwoKbXkgJGVwcmludHMgPSBFUHJpbnRzLT5uZXc7Cm15ICRyZXBvID0gJGVw
 cmludHMtPmN1cnJlbnRfcmVwb3NpdG9yeTsKZXhpdCggMCApIHVubGVzcyggZGVmaW5lZCAkcmVw
 byApOwoKbXkgJGFsdF90eXBlID0gJHJlcG8tPnBhcmFtKCAnaWRfdHlwZScgKSBvciBleGl0Owpt
@@ -190,11 +191,16 @@ ZXRhaWxzX3VybH0gPSAkanNvbi0+eydkZXRhaWxzX3VybCd9OwoKcHJpbnQgU1RET1VUIGVuY29k
 ZV9qc29uKCAkb3V0ICk7CmV4aXQ7CgpzdWIgcmV0dXJuX2Vycm9yCnsKCW15KCAkZXJyX21zZyAp
 ID0gQF87CgoJbXkgJG91dCA9IHt9OwoJJG91dC0+e2Vycm9yfSA9IDE7Cgkkb3V0LT57bWVzc2Fn
 ZX0gPSAkZXJyX21zZzsKCglwcmludCBTVERPVVQgZW5jb2RlX2pzb24oICRvdXQgKTsKCQp9Cg==
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/Altmetric.pm</filename>
-        <mime_type>application/x-perl</mime_type><hash>3e3f1a4ffefedd62970c92bbaa56a8cd</hash><hash_type>MD5</hash_type><filesize>1355</filesize><data encoding="base64">IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
+          <mime_type>application/x-perl</mime_type>
+          <hash>3e3f1a4ffefedd62970c92bbaa56a8cd</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1355</filesize>
+          <data encoding="base64">IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
 IyMjIyMjIyMjIyMjCiMKIyBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVBNQzo6QWx0bWV0cmlj
 CiMKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
 IyMjIyMjIyMjIyMjIyMjIwoKcGFja2FnZSBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVBNQzo6
@@ -218,11 +224,16 @@ aWxlID0+ICJjZmcuZC8kMSIsCgkJKTsKCQkkc2VsZi0+e3JlcG9zaXRvcnl9LT5yZWRpcmVjdCgg
 JHVybCApOwoJCWV4aXQoIDAgKTsKCX0KCgkkc2VsZi0+e3Byb2Nlc3Nvcn0tPntzY3JlZW5pZH0g
 PSAiQWRtaW46OkVQTSI7CgoJJHNlbGYtPntwcm9jZXNzb3J9LT5hZGRfbWVzc2FnZSggImVycm9y
 IiwgJHNlbGYtPmh0bWxfcGhyYXNlKCAibWlzc2luZyIgKSApOwp9CgoxOwo=
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>static/style/auto/altmetric.css</filename>
-        <mime_type>text/css</mime_type><hash>02f6109b36cb81d6159d38ec982de576</hash><hash_type>MD5</hash_type><filesize>1529</filesize><data encoding="base64">LmFsdG1ldHJpY19zdW1tYXJ5X3BhZ2UgewoJcGFkZGluZzogMTBweDsKfQoKYS5hbHRtZXRyaWNf
+          <mime_type>text/css</mime_type>
+          <hash>02f6109b36cb81d6159d38ec982de576</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1529</filesize>
+          <data encoding="base64">LmFsdG1ldHJpY19zdW1tYXJ5X3BhZ2UgewoJcGFkZGluZzogMTBweDsKfQoKYS5hbHRtZXRyaWNf
 ZGV0YWlscyB7CgltYXJnaW4tdG9wOiAxMHB4OwoJZGlzcGxheTogYmxvY2s7Cn0KCmltZy5hbHRt
 ZXRyaWNfZG9udXQgewoJZmxvYXQ6IGxlZnQ7Cn0KCmRpdi5hbHRtZXRyaWNfZGV0YWlsc19wYW5l
 bCB7CgltYXJnaW4tbGVmdDogMTBweDsKfQoKZGl2LmFsdG1ldHJpY19yb3cgewoJbWFyZ2luLWxl
@@ -249,11 +260,16 @@ ZGl2LmFsdG1ldHJpY19tZW5kZWxleSB7Cglib3JkZXItbGVmdDogMTZweCBzb2xpZCAjQTYwMDAw
 Owp9CgovKiBDb25ub3RlYSAqLwpkaXYuYWx0bWV0cmljX2Nvbm5vdGVhIHsKCWJvcmRlci1sZWZ0
 OiAxNnB4IHNvbGlkICNGRjQwNDA7Cn0KCi8qIENpdGVVTGlrZSAqLwpkaXYuYWx0bWV0cmljX2Np
 dGV1bGlrZSB7Cglib3JkZXItbGVmdDogMTZweCBzb2xpZCAjQkNEMkVGOwp9Cgo=
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>static/javascript/auto/99_altmetric.js</filename>
-        <mime_type>application/javascript</mime_type><hash>f13732bf59f778a9f493d8f50e17a77e</hash><hash_type>MD5</hash_type><filesize>3435</filesize><data encoding="base64">dmFyIEVQX0FsdG1ldHJpY19CYWRnZSA9IENsYXNzLmNyZWF0ZSggewoKCWluaXRpYWxpemU6IGZ1
+          <mime_type>application/javascript</mime_type>
+          <hash>f13732bf59f778a9f493d8f50e17a77e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>3435</filesize>
+          <data encoding="base64">dmFyIEVQX0FsdG1ldHJpY19CYWRnZSA9IENsYXNzLmNyZWF0ZSggewoKCWluaXRpYWxpemU6IGZ1
 bmN0aW9uKGlkKSB7CgoJCWlmKCBpZCA9PSBudWxsICkKCQkJcmV0dXJuOwoKCQl0aGlzLmVsZW1l
 bnQgPSAkKCBpZCApOwoJCWlmKCB0aGlzLmVsZW1lbnQgPT0gbnVsbCApCgkJCXJldHVybjsKCgkJ
 dGhpcy5hbHRtZXRyaWNfaWQgPSB0aGlzLmVsZW1lbnQuZ2V0QXR0cmlidXRlKCAnZGF0YS1hbHRt
@@ -314,11 +330,16 @@ ZXRhaWxzJywgJ3RhcmdldCc6ICdfYmxhbmsnIH0gKTsKCQlhbHRsaW5rLnVwZGF0ZSggbGlua3Rl
 eHQgKTsKCQkKCQl0aGlzLmVsZW1lbnQuaW5zZXJ0KCBuZXcgRWxlbWVudCggJ2RpdicsIHsgJ3N0
 eWxlJyA6ICdjbGVhcjpib3RoJyB9ICkgKTsKCgkJdGhpcy5lbGVtZW50Lmluc2VydCggYWx0bGlu
 ayApOwoJfSwKCn0gKTsK
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>static/images/epm/altmetric.png</filename>
-        <mime_type>image/png</mime_type><hash>09eaeb9c2762557023d6d654c9b28239</hash><hash_type>MD5</hash_type><filesize>112883</filesize><data encoding="base64">iVBORw0KGgoAAAANSUhEUgAAASwAAAEsEAYAAAAp7VI2AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
+          <mime_type>image/png</mime_type>
+          <hash>09eaeb9c2762557023d6d654c9b28239</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>112883</filesize>
+          <data encoding="base64">iVBORw0KGgoAAAANSUhEUgAAASwAAAEsEAYAAAAp7VI2AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
 WXMAAABIAAAASABGyWs+AAAACXZwQWcAAAEsAAABLAD7OHJpAACAAElEQVR42ux9dZgUx/b2W7Oz
 wrKLu0MCgYQQ4glx10tuXEhu3G7cQ4y4e25cuHEX4q5EIUgIBLeFZd11pM73R/dpqe6a7pndBe7v
 y3kemO3usq7u6X7nPW+dI/D/iREREW21FfbCXthr7EfyKfmUfGpUAY2gETRis13xOB7H48NWoRCF
@@ -2299,11 +2320,16 @@ vL7JaqValWpVqtWe2TkNcxrmNPxnoFqilqglm6ngvoL7Cu5bd/iOujvq7qi74tMtC7cs3LJwZf6u
 Kruq7Kryo85RfP99vKP6/zf+H3TF92t3Z4blAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEzLTA3LTI5
 VDE1OjEyOjIxKzAxOjAwGc3R6QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMy0wNy0yOVQxNToxMjoy
 MSswMTowMGiQaVUAAAAASUVORK5CYII=
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/altmetric.xml</filename>
-        <mime_type>application/xml</mime_type><hash>09002186c33f126852db8213ab108bd4</hash><hash_type>MD5</hash_type><filesize>6042</filesize><data encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjwh
+          <mime_type>application/xml</mime_type>
+          <hash>09002186c33f126852db8213ab108bd4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>6042</filesize>
+          <data encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjwh
 RE9DVFlQRSBwaHJhc2VzIFNZU1RFTSAiZW50aXRpZXMuZHRkIj4KPGVwcDpwaHJhc2VzIHhtbG5z
 PSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiB4bWxuczplcHA9Imh0dHA6Ly9lcHJpbnRz
 Lm9yZy9lcDMvcGhyYXNlIiB4bWxuczplcGM9Imh0dHA6Ly9lcHJpbnRzLm9yZy9lcDMvY29udHJv
@@ -2409,11 +2435,16 @@ eSB1c2VyPC9lcHA6cGhyYXNlPgo8ZXBwOnBocmFzZSBpZD0ibGliL2FsdG1ldHJpYzpyZWFkZXJz
 X21lbmRlbGV5X3BsdXJhbCI+PGVwYzpwaHJhc2UgcmVmPSJsaWIvYWx0bWV0cmljOnJlYWRlcnNf
 bWVuZGVsZXkiPjxlcGM6cGFyYW0gbmFtZT0iY291bnQiPjxlcGM6cGluIG5hbWU9ImNvdW50IiAv
 PjwvZXBjOnBhcmFtPjwvZXBjOnBocmFzZT5zPC9lcHA6cGhyYXNlPgoKPC9lcHA6cGhyYXNlcz4K
-</data></file>
+</data>
+        </file>
         <file>
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
-        <mime_type>application/x-perl</mime_type><hash>0f27bc0182ab9571129b966915b87be9</hash><hash_type>MD5</hash_type><filesize>4182</filesize><data encoding="base64">cGFja2FnZSBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVByaW50OjpCb3g6OkFsdG1ldHJpYzsK
+          <mime_type>application/x-perl</mime_type>
+          <hash>0f27bc0182ab9571129b966915b87be9</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>4182</filesize>
+          <data encoding="base64">cGFja2FnZSBFUHJpbnRzOjpQbHVnaW46OlNjcmVlbjo6RVByaW50OjpCb3g6OkFsdG1ldHJpYzsK
 Cm91ciBASVNBID0gKCAnRVByaW50czo6UGx1Z2luOjpTY3JlZW46OkVQcmludDo6Qm94JyApOwoK
 dXNlIHN0cmljdDsKCnN1YiBjYW5fYmVfdmlld2VkCnsKCW15KCAkc2VsZiApID0gQF87CgoJcmV0
 dXJuIDAgaWYoICFkZWZpbmVkICRzZWxmLT57cHJvY2Vzc29yfS0+e2VwcmludH0gKTsKCXJldHVy
@@ -2487,7 +2518,8 @@ cmVlbjo6RVByaW50OjpCb3g6OkFsdG1ldHJpYyIgKTsKCglpZiggIWRlZmluZWQgJGJveCApCgl7
 CgkJJHNlbGYtPnJ1bnRpbWVfZXJyb3IoICJQcm9ibGVtIGNyZWF0aW5nIFNjcmVlbjo6RVByaW50
 OjpCb3g6OkFsdG1ldHJpYyIgKTsKCX0KCglyZXR1cm4gWyAkYm94LT5yZW5kZXJfZW1iZWRfc2Ny
 aXB0LCAiWEhUTUwiIF07Cn0KMTsK
-</data></file>
+</data>
+        </file>
       </files>
       <mime_type>text/plain</mime_type>
       <format>text</format>
@@ -2520,7 +2552,7 @@ aXB0LCAiWEhUTUwiIF07Cn0KMTsK
       <id>https://github.com/jesusbagpuss</id>
     </item>
   </creators>
-  <datestamp>2025-11-04T15:43:25Z</datestamp>
+  <datestamp>2025-11-05T14:53:53Z</datestamp>
   <title>Altmetric</title>
   <description>Display Altmetric badges on summary pages. Visit the altmetric web-site for more information about the badges: https://www.altmetric.com/products/free-tools/institutional-repository-badges/</description>
   <requirements>If an API key is obtained from Altmetric, the plugin will support internationalisation. Without an API key the plugin will render 'embedded badges'.</requirements>
