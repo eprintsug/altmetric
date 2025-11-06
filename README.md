@@ -32,8 +32,8 @@ This version is available as both [an ingredient](https://github.com/eprintsug/a
 
 - If you have customised versions of the css or javascript files, please review these. If custom css was added to support other
   languages, please define this text in an appropriate language phrase file based on `en/altmetric.xml`
-- If badges are not displaying on summary pages you may need to refresh the astracts, either by running `bin/generate_abstracts` or
-  via the 'Regenerate abstracts' button on the Admin screen
+- After updating, you may need to refresh the abstracts, either by running `bin/generate_abstracts` or
+  via the 'Regenerate Abstracts' button on the Admin screen
 
 If you have issues, please ask on the EPrints tech list.
 
@@ -81,7 +81,7 @@ The colours used in the CSS are based on the following records which cover all c
 ## Version history ##
 
 ### Version 2.0.0 ###
-- Updates to spport API key being mandatory. Falls back to embed if key isn't defined.
+- Updates to support API key being mandatory. Falls back to embed method if an API key isn't defined.
 - Updates description of some sources (twitter -> X) and adds new sources (Bluesky)
 - Improve accessibility by removing CSS before/after text
 - Renders details panel on server, allowing phrases to be used for better internationalisation
