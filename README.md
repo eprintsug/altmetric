@@ -1,6 +1,6 @@
 # Altmetric #
 
-## Summery ##
+## Summary ##
 
 <img align="right" height="200" src="altmetric_example.png">
 Display altmetric badges for items with appropriate identifiers.
@@ -26,6 +26,16 @@ $c->{altmetric}->{badge_attributes} = {
 ```
 
 Refer to https://badge-docs.altmetric.com/badge-playground.html for more details on the available options.
+
+### Upgrading to v2.0.0 ###
+This version is available as both [an ingredient](https://github.com/eprintsug/altmetric/tree/3_4) and an EPM in the Bazaar.
+
+- If you have customised versions of the css or javascript files, please review these. If custom css was added to support other
+  languages, please define this text in an appropriate language phrase file based on `en/altmetric.xml`
+- If badges are not displaying on summary pages you may need to refresh the astracts, either by running `bin/generate_abstracts` or
+  via the 'Regenerate abstracts' button on the Admin screen
+
+If you have issues, please ask on the EPrints tech list.
 
 ## Displaying the badge ##
 By default this plugin configures a 'Box' to be displayed on an item's summary page. The location and order of this box can be controlled
