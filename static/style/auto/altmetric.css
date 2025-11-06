@@ -1,4 +1,4 @@
-#altmetric_summary_page {
+.altmetric_summary_page {
 	padding: 10px;
 }
 
@@ -24,112 +24,81 @@ div.altmetric_row > span {
 	font-weight: bold;
 }
 
-/* Twitter */
-div.altmetric_tweeters:before {
-	content: 'Tweeted by ';
+/* Twitter / X */
+div.altmetric_tweeters {
+	border-left: 16px solid #2F90B9;
 }
 
-div.altmetric_tweeters {
-	border-left: 16px solid #74CFED;
+/* Bluesky */
+div.altmetric_bluesky {
+	border-left: 16px solid #1185FE;
 }
 
 /* Blogs */
-div.altmetric_feeds:before {
-	content: 'Blogged by ';
-}
-
 div.altmetric_feeds {
-	border-left: 16px solid #FFD140;
+	border-left: 16px solid #E89500;
 }
 
 /* Google+ */
-div.altmetric_gplus:before {
-	content: 'Mentioned in ';
-}
-
-div.altmetric_gplus:after {
-	content: ' Google+ posts';
-}
-
 div.altmetric_gplus {
-	border-left: 16px solid #E065BB;
+	border-left: 16px solid #912470;
 }
 
 /* News outlet */
-div.altmetric_msm:before {
-	content: 'Picked up by ';
-}
-
-div.altmetric_msm:after {
-	content: ' news outlets';
-}
-
 div.altmetric_msm {
-	border-left: 16px solid #FF0000;
+	border-left: 16px solid #B60000;
 }
 
 /* Facebook */
-div.altmetric_fbwalls:before {
-	content: 'On ';
-}
-
-div.altmetric_fbwalls:after {
-	content: ' Facebook pages';
-}
-
 div.altmetric_fbwalls {
-	border-left: 16px solid #2445BD;
+	border-left: 16px solid #0B2CA4;
 }
 
 /* Reddit */
-div.altmetric_rdts:before {
-	content: 'Reddited by ';
-}
-
 div.altmetric_rdts {
-	border-left: 16px solid #D5E8F0;
+	border-left: 16px solid #B9DDEB;
 }
-
-/* Delicious */
-
-/* Forum */
 
 /* Videos */
-div.altmetric_videos:before {
-	content: 'On ';
-}
-
-div.altmetric_videos:after {
-	content: ' videos';
-}
-
 div.altmetric_videos {
 	border-left: 16px solid #98C973;
 }
 
-/* Mendeley */
-div.altmetric_mendeley:after {
-	content: ' readers on Mendeley';
+/* Q and A */
+div.altmetric_qna {
+	border-left: 16px solid #EFEFEF;
 }
 
+/* Wikipedia */
+div.altmetric_wikipedia {
+	border-left: 16px solid #3B2A3D;
+}
+
+/* Policies */
+div.altmetric_policies {
+	border-left: 16px solid #5B17E8;
+}
+
+/* Clinical guidelines */
+div.altmetric_guidelines {
+	border-left: 16px solid #15BABC;
+}
+/* Patents*/
+div.altmetric_patents {
+	border-left: 16px solid #D45029;
+}
+
+/* Mendeley */
 div.altmetric_mendeley {
 	border-left: 16px solid #A60000;
 }
 
 /* Connotea */
-div.altmetric_connotea:after {
-	content: ' readers on Connotea';
-}
-
 div.altmetric_connotea {
 	border-left: 16px solid #FF4040;
 }
 
 /* CiteULike */
-div.altmetric_citeulike:after {
-	content: ' readers on CiteULike ';
-}
-
 div.altmetric_citeulike {
 	border-left: 16px solid #BCD2EF;
 }
