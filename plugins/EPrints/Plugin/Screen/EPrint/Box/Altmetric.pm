@@ -33,7 +33,7 @@ sub render
 	# If an API key has been defined, use the API (via local cgi) method to render the data.
 	# If there is no API key, fall back to the Altmetric embed javascript method.
 
-	if( defined $session->config( "altmetric", "api_key" ) )
+	if( EPrints::Utils::is_set( $session->config( "altmetric", "api_key" ) ) )
 	{
 		my $t = EPrints::Utils::generate_token( 8 );
 		my $div = $frag->appendChild( $session->make_element( 'div', id => "altmetric_summary_page_$t", class => 'altmetric_summary_page', "data-altmetric-id-type" => $type, "data-altmetric-id" => $id ) );
@@ -120,8 +120,6 @@ sub run_altmetric_embed_script
 {
 	my( $self, $state ) = @_;
 
-	#my $box = $state->{session}->plugin( "Screen::EPrint::Box::Altmetric", processor => $processor );
-	#my $box = $state->{session}->plugin( "Screen::EPrint::Box::Altmetric", session => $state->{session} );
 	my $box = $state->{session}->plugin( "Screen::EPrint::Box::Altmetric" );
 
 	if( !defined $box )
