@@ -6,6 +6,8 @@
 <epp:phrase id="lib/altmetric:auth_reqd">The Altmetric API now requires a key. Please refer to the EPrints/Altmetric documentation.</epp:phrase>
 <epp:phrase id="lib/altmetric:forbidden">No access to the Altmetric API.</epp:phrase>
 <epp:phrase id="lib/altmetric:rate_limited">Too many requests - rate limited.</epp:phrase>
+<epp:phrase id="lib/altmetric:500_issue">Unknown problem retrieving Altmetric data.</epp:phrase>
+<epp:phrase id="lib/altmetric:cloudflare_issue">Cloudflare problem preventing Altmetric data being shown.</epp:phrase>
 <epp:phrase id="lib/altmetric:down_for_maintenance">Altmetric unavailable due to maintenance.</epp:phrase>
 <epp:phrase id="lib/altmetric:unknown_error">An error has occurred whilst retrieving data from Altmetric.</epp:phrase>
 
