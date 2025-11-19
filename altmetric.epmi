@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<epm xmlns="http://eprints.org/ep2/data/2.0" id="http://localhost:8080/id/epm/altmetric">
+<epm xmlns="http://eprints.org/ep2/data/2.0" id="http://eprints.test/id/epm/altmetric">
   <epmid>altmetric</epmid>
   <uri>http://eprints.test/id/epm/altmetric</uri>
   <documents>
@@ -17,9 +17,9 @@
           <datasetid>document</datasetid>
           <filename>epm/altmetric/cgi/altmetric</filename>
           <mime_type/>
-          <hash>9749fe81e550c9a96e3d8b4fdb0be378</hash>
+          <hash>952dd0df46b09e47137452e7dcb562c8</hash>
           <hash_type>MD5</hash_type>
-          <filesize>5926</filesize>
+          <filesize>6200</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
@@ -57,17 +57,17 @@
           <datasetid>document</datasetid>
           <filename>lang/en/phrases/altmetric.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>09002186c33f126852db8213ab108bd4</hash>
+          <hash>3ab815132e6c02809623062caaec6ba2</hash>
           <hash_type>MD5</hash_type>
-          <filesize>6042</filesize>
+          <filesize>6258</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/Plugin/Screen/EPrint/Box/Altmetric.pm</filename>
           <mime_type>application/x-perl</mime_type>
-          <hash>0f27bc0182ab9571129b966915b87be9</hash>
+          <hash>db9909366d2a30f6fc84b102f1f5652f</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4182</filesize>
+          <filesize>4224</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
@@ -76,7 +76,7 @@
       <content>install</content>
     </document>
   </documents>
-  <version>2.0.0</version>
+  <version>2.0.1</version>
   <controller>EPMC::Altmetric</controller>
   <creators>
     <item>
@@ -101,7 +101,7 @@
       <id>https://github.com/jesusbagpuss</id>
     </item>
   </creators>
-  <datestamp>2025-11-05T14:53:53Z</datestamp>
+  <datestamp>2025-11-19T07:41:22Z</datestamp>
   <title>Altmetric</title>
   <description>Display Altmetric badges on summary pages. Visit the altmetric web-site for more information about the badges: https://www.altmetric.com/products/free-tools/institutional-repository-badges/</description>
   <requirements>If an API key is obtained from Altmetric, the plugin will support internationalisation. Without an API key the plugin will render 'embedded badges'.</requirements>
