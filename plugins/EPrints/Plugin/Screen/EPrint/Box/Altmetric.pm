@@ -35,7 +35,19 @@ sub render
 
 	if( EPrints::Utils::is_set( $session->config( "altmetric", "api_key" ) ) )
 	{
-		my $t = EPrints::Utils::generate_token( 8 );
+		# Generate a unique ID for the div, in case this is used on a page that could display multiple badges e.g. search results or browse pages
+		my $t = '';
+		# generate_token is EPrints v3.4.5+
+		if( UNIVERSAL::can( 'EPrints::Utils', 'generate_token' ) )
+		{
+			$t = EPrints::Utils::generate_token( 8 );
+		}
+		else
+		{
+			# rand is sufficient, we're just making unique container id attributes
+			$t = int( 10000000 + rand(99999999 - 10000000) ); 
+		}
+
 		my $div = $frag->appendChild( $session->make_element( 'div', id => "altmetric_summary_page_$t", class => 'altmetric_summary_page', "data-altmetric-id-type" => $type, "data-altmetric-id" => $id ) );
 
 		my $phr = "default_content";
